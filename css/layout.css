@@ -1,0 +1,8 @@
+body{
+    display:grid;
+    grid-template-columns: 247px 1193px;
+}
+
+.sidebar{
+    background-color: var(--cor-segundaria);
+}
