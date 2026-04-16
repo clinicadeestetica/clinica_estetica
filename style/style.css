@@ -1,0 +1,22 @@
+@import url(../css/agendamento.css);
+@import url(../css/cadastro.css);
+@import url(../css/cliente.css);
+@import url(../css/componentes.css);
+@import url(../css/estoque.css);
+@import url(../css/financeiro.css);
+@import url(../css/global.css);
+@import url(../css/index.css);
+@import url(../css/layout.css);
+@import url(../css/login.css);
+@import url(../css/profissional.css);
+
+/* RESPONSIVIDADE */
+@import url(../css/responsividade_agendamento.css);
+@import url(../css/responsividade_cadastro.css);
+@import url(../css/responsividade_cliente.css);
+@import url(../css/responsividade_estoque.css);
+@import url(../css/responsividade_financeiro.css);
+@import url(../css/responsividade_index.css);
+@import url(../css/responsividade_layout.css);
+@import url(../css/responsividade_login.css);
+@import url(../css/responsividade_profissionais.css);
