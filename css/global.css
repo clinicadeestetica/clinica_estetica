@@ -10,7 +10,9 @@
   /* CORES PRINCIPAIS */
   --cor-primaria: #73c0b0;
   --cor-segundaria: #4b908e;
-
+  --cor-header: #C0D6D4;
+  --cor-barra-header:#DCF3F1;
+  
   /* Tipografia */
   --font-family: "Poppins", sans-serif;
   --font-cor-primaria: #316064;
@@ -38,7 +40,8 @@ body {
   background-size: cover;
   position: fixed;
   color: var(--font-cor-primaria);
-  gap: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
