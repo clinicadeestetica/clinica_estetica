@@ -1,0 +1,55 @@
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .toggle {
+        display: block;
+        margin-left: 215px;
+        margin-top: 7px;
+    }
+}
+
+@media (min-width: 1024px){
+}
+@media (max-width: 767px){
+     .toggle {
+        display: block;
+        margin-left: 215px;
+        margin-top: 7px;
+    }
+
+    .padrao{
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -260px; /* escondido */
+        width: 247px;
+        height: 100%;
+        z-index: 1000;
+        transition: 0.3s;
+    }
+
+    .sidebar.active{
+        left: 0; /* aparece */
+    }
+
+    .toggle{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+    }
+
+    .close_sidebar{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+    }
+}

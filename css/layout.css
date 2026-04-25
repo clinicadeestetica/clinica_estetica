@@ -58,12 +58,8 @@ body{
 .header > img{
     width: 55px;
     height: 55px;
-    margin-right: 10px;
-}
-
-.header > p{
-    display: flex;
-    margin-top: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 
@@ -80,16 +76,26 @@ body{
 .header > p{
     display: flex;
     margin-left: auto;
-   margin-top: 35px;
-   
+    margin-top: 35px;
+    margin-right: 10px;
 }
 
-.header > svg{
-    display: flex;
-    margin-right: 60px;
-}
 
- .header > svg, .header > img, .header> .barra {
+
+ .header > img, .header> .barra {
     display: flex;
     margin-top: 15px;
 }
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
