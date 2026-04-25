@@ -8,6 +8,9 @@ body{
     grid-template-columns: 247px 1fr;
     height: 100%;
     width: 100%;
+body{
+    display:grid;
+    grid-template-columns: 247px 1193px;
 }
 
 .sidebar{
@@ -99,3 +102,4 @@ body{
 
 
 
+}
