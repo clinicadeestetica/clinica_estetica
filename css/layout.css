@@ -88,7 +88,14 @@ body{
     margin-top: 0 auto;
 }
 
-.toggle {
+.toggle_abrir {
+   
+    font-size:30px;
+    cursor:pointer;
+    padding:15px;
+}
+
+.header > svg {
     display: none;
     cursor: pointer;
 }
