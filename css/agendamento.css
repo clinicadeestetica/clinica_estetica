@@ -1,0 +1,15 @@
+.content-agendamento{
+    background-color: var(--cor-conteiner);
+    padding: 25px;
+    margin-top: 50px;
+    height: 720px;
+    width: 633px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.137);
+}
+
+p {
+    color:var(--font-cor-primaria);
+    justify-content: center;
+    font-size: var(--font-weight-bold);
+}

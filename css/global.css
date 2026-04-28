@@ -13,6 +13,7 @@
   --cor-segundaria: #4b908e;
   --cor-header: #C0D6D4;
   --cor-barra-header:#DCF3F1;
+  --cor-conteiner:#7B989A;
   
   /* Tipografia */
   --font-family: "Poppins", sans-serif;
@@ -39,7 +40,7 @@ body {
   font-family: var(--font-family);
   background-image: url(../assets/fundo-site.png);
   background-size: cover;
-  position: fixed;
+  position: relative;
   color: var(--font-cor-primaria);
   height: 100%;
   width: 100%;
