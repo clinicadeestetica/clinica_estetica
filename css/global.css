@@ -39,7 +39,6 @@ body {
   font-family: var(--font-family);
   background-image: url(../assets/fundo-site.png);
   background-size: cover;
-  position: fixed;
   color: var(--font-cor-primaria);
   height: 100%;
   width: 100%;
