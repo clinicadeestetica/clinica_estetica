@@ -1,4 +1,4 @@
-body{ 
+html, body{ 
     height: 100%;
     width: 100%;
 }
@@ -16,18 +16,18 @@ body{
 
         .sidebar{
             background-color: var(--cor-segundaria);
-            min-height: 100%;
+            min-height: 100vh; /* garante altura total do sidebar */
             
         }
 
         .sidebar_icon_link, .sidebar > a{
-        margin-left: 40px;
+            margin-left: 40px;
         }
 
         .sidebar_link{
-        font-family: var(--font-family);
-        color:var(--font-cor-segundaria);
-        font-weight: var(--font-weight-bold);
+            font-family: var(--font-family);
+            color:var(--font-cor-segundaria);
+            font-weight: var(--font-weight-bold);
         }
 
         .sidebar_icon_link{
@@ -46,10 +46,10 @@ body{
         }   
 
         .barra {
-        width: 1px;          
-        height: 60px;       
-        background-color: var(--cor-barra-header); 
-        margin: 0 10px;      
+            width: 1px;          
+            height: 60px;       
+            background-color: var(--cor-barra-header); 
+            margin: 0 10px;      
         }
 
         .header{ 
@@ -95,4 +95,5 @@ body{
             display: none;
             cursor: pointer;
         }
+
 }
