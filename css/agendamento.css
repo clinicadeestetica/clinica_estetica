@@ -2,8 +2,8 @@
     background-color: var(--cor-conteiner);
     padding: 25px;
     margin-top: 50px;
-    height: 720px;
-    width: 633px;
+    height: 633px;
+    width: 720px;
     border-radius: 16px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.137);
     display: flex;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .icon-group {
@@ -36,9 +36,10 @@
     width: 493px;
     height: 57px;
     padding: 15px 10px 15px 50px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     outline: none;
+    background: var(--cor-inputs);
 }
 
 /* ícone */
@@ -51,7 +52,63 @@
 
 /* Placeholder */
 .form-group input::placeholder {
+    font-family: var(--font-family);
     color: var(--cor-placeholder);
     opacity: 0.5;
 }
 
+/* Input para seleção de serviços */
+.input-select {
+    width: 493px;
+    height: 57px;
+    padding: 15px 10px 15px 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    appearance: none; /* remove icone padrão */
+    outline: none;
+}
+
+.campo-select {
+    width: 493px;
+    height: 57px;
+    background: var(--cor-inputs);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    border: 1px solid #ccc;
+}
+
+/* ícone da seta */
+.icon-seta {
+    position: absolute;
+    left: 460px;
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none; /* para que o clique no ícone e ative o select */
+}
+
+/* texto "Serviço" */
+.label-servico {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 50px;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+}
+
+/* select */
+.campo-select select {
+    width: 493px;
+    height: 57px;
+    padding-left: 100px; /* espaço pro ícone e texto */
+    padding-right: 40px;
+    border: none;
+    background: transparent;
+    appearance: none;
+    outline: none;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+    font-family: var(--font-family);
+}

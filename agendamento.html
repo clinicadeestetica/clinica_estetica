@@ -184,7 +184,7 @@
           <form action="/enviar-dados" method="post">
 
                <!-- div para organização dos inputs -->
-               <div class="form-group">
+              <div class="form-group">
                 <!-- div para alinhamento dos icones -->
                 <div class="icon-group">
                 <!-- Icone de user -->
@@ -223,7 +223,52 @@
                 </div>
 
 
+                  <!-- Campo de serviço -->
+                <div class="campo-select">
+                  <!-- icone de serviço -->
+                  <div class="icon-group">
+                    <span class="icon">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="25" height="25" fill="url(#pattern0_185_726)"/>
+                      <defs>
+                      <pattern id="pattern0_185_726" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_185_726" transform="scale(0.015625)"/>
+                      </pattern>
+                      <image id="image0_185_726" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                      </defs>
+                    </svg>
+                    </span>
+                  </div>
 
+                  <!-- lado esquerdo de serviço com texto-->
+                  <span class="label-servico">Serviço</span>
+
+                  <!-- select de serviço -->
+                  <select class="input-select" id="servico" required>
+                    <option disabled selected>Selecione um serviço</option>
+                    <option>Preenchimento Labial</option>
+                    <option>Botox</option>
+                    <option>Massagem Facial</option>
+                    <option>Peeling Químico</option>
+                    <option>Limpeza de Pele</option>
+                    <option>Microagulhamento</option>
+                    <option>Drenagem Linfática</option>
+                  </select>
+
+                  <!-- seta ao lado de selecione um serviço -->
+                  <span class="icon-seta">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
+                      <defs>
+                      <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
+                      </pattern>
+                      <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
+                      </defs>
+                    </svg>
+                  </span>
+
+                </div>
               </div>
 
 
