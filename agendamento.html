@@ -185,8 +185,10 @@
 
                <!-- div para organização dos inputs -->
                <div class="form-group">
+                <!-- div para alinhamento dos icones -->
+                <div class="icon-group">
                 <!-- Icone de user -->
-                <span class="icon-user">
+                <span class="icon">
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="25" height="25" fill="url(#pattern0_185_724)"/>
                     <defs>
@@ -200,7 +202,28 @@
 
                 <!-- Campo de nome -->
                 <input type="text" id="nome" placeholder="Nome Completo" required>
-                
+                </div>
+
+                <div class="icon-group">
+                <!-- icone de telefone -->
+                 <span class="icon">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="25" height="25" fill="url(#pattern0_185_725)"/>
+                    <defs>
+                    <pattern id="pattern0_185_725" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_185_725" transform="scale(0.015625)"/>
+                    </pattern>
+                    <image id="image0_185_725" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+                 </span>
+
+                <!-- Campo de telefone -->
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                </div>
+
+
+
               </div>
 
 
