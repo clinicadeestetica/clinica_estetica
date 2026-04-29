@@ -158,8 +158,9 @@
           </div>
         </div>
 
+
         <!-- Header Padrao -->
-        <header class="header">
+        <header>
 
           <div class="header_h2">
             <h2 class="header_h2--bold">Agendamentos/</h2>
@@ -174,11 +175,41 @@
           
         </header>
 
+
         <!-- Conteiner principal do agendamento -->
         <div class="content-agendamento">
           <h4>Preencha as informações abaixo para agendar seu horário</h4>
 
-          <input type="text" name="nome" required>
+          <!-- Formulário de agendamento -->
+          <form action="/enviar-dados" method="post">
+
+               <!-- div para organização dos inputs -->
+               <div class="form-group">
+                <!-- Icone de user -->
+                <span class="icon-user">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="25" height="25" fill="url(#pattern0_185_724)"/>
+                    <defs>
+                    <pattern id="pattern0_185_724" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_185_724" transform="scale(0.015625)"/>
+                    </pattern>
+                    <image id="image0_185_724" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+                </span>
+
+                <!-- Campo de nome -->
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                
+              </div>
+
+
+            <!-- Botão de envio -->
+            <button type="submit">
+              Confirmar agendamento
+            </button>
+
+          </form>
         </div>
 
       </div>

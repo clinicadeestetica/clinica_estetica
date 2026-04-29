@@ -6,10 +6,43 @@
     width: 633px;
     border-radius: 16px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
-    color:var(--font-cor-primaria);
-    justify-content: center;
-    font-size: var(--font-weight-bold);
+.content-agendamento > p {
+    color: var(--font-cor-primaria);
+}
+
+.form-group {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* input */
+.form-group input {
+    width: 493px;
+    height: 57px;
+    padding: 15px 10px 15px 50px; /* espaço pro ícone */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 40px;
+}
+
+/* icone */
+.form-group .icon-user {
+    position: absolute;
+    left: 10px;
+    top: 55%; /* centraliza o icone no input */
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+    color: var(--cor-placeholder);
+    opacity: 0.5;
 }

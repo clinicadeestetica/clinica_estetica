@@ -12,7 +12,7 @@ html, body{
 
 .sidebar{
     background-color: var(--cor-segundaria);
-    min-height: 100vh; /* garante altura total do sidebar */
+    min-height: 100vh; 
     grid-row: 1 / 3; 
     grid-column: 1;
 }
@@ -49,7 +49,7 @@ html, body{
     margin: 0 10px;      
 }
 
-.header{ 
+header{ 
     display: flex;
     background-color: var(--cor-header);
     width: 100%;
@@ -60,7 +60,7 @@ html, body{
 }
 
 
-.header > img{
+header > img{
     width: 55px;
     height: 55px;
     margin-left: 6px;
@@ -77,13 +77,13 @@ html, body{
     font-weight: var(--font-weight-regular);
 }
 
-.header > p{
+header > p{
     display: flex;
     margin-left: auto;
     margin-right: 10px;
 }
 
-.header > img, .header> .barra {
+header > img, .header> .barra {
     display: flex;
     margin-top: 0 auto;
 }
