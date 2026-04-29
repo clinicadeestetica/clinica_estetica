@@ -185,6 +185,7 @@
 
                <!-- div para organização dos inputs -->
               <div class="form-group">
+                <!-- NOME -->
                 <!-- div para alinhamento dos icones -->
                 <div class="icon-group">
                 <!-- Icone de user -->
@@ -204,6 +205,7 @@
                 <input type="text" id="nome" placeholder="Nome Completo" required>
                 </div>
 
+                <!-- TELEFONE -->
                 <div class="icon-group">
                 <!-- icone de telefone -->
                  <span class="icon">
@@ -223,6 +225,7 @@
                 </div>
 
 
+                <!-- SERVIÇOS -->
                   <!-- Campo de serviço -->
                 <div class="campo-select">
                   <!-- icone de serviço -->
@@ -240,8 +243,8 @@
                     </span>
                   </div>
 
-                  <!-- lado esquerdo de serviço com texto-->
-                  <span class="label-servico">Serviço</span>
+                  <!-- lado direito de serviço com texto-->
+                  <span class="label">Serviço</span>
 
                   <!-- select de serviço -->
                   <select class="input-select" id="servico" required>
@@ -267,10 +270,83 @@
                       </defs>
                     </svg>
                   </span>
-
                 </div>
-              </div>
 
+                <!-- DATA -->
+                <!-- Campo de data -->
+                <div class="campo-select">
+                  <div class="icon-group">
+                    <!-- icone de data -->
+                    <span class="icon">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="25" height="25" fill="url(#pattern0_185_727)"/>
+                        <defs>
+                        <pattern id="pattern0_185_727" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_185_727" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_185_727" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <!-- lado direito de data com texto -->
+                  <span class="label">Data</span>
+
+                  <input type="date" id="data" name="data" required>
+
+                  <!-- seta ao lado de horario -->
+                  <span class="icon-seta">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
+                      <defs>
+                      <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
+                      </pattern>
+                      <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+
+                <!-- HORARIO -->
+                <!-- Campo de horario -->
+                <div class="campo-select">
+                  <div class="icon-group">
+                    <!-- icone de horario -->
+                    <span class="icon">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="25" height="25" fill="url(#pattern0_185_728)"/>
+                        <defs>
+                        <pattern id="pattern0_185_728" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_185_728" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_185_728" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <!-- lado direito de horario com texto -->
+                  <span class="label">Horário</span>
+
+                  <input type="time" id="horario" name="horario" required>
+
+                  <!-- seta ao lado de horario -->
+                  <span class="icon-seta">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
+                      <defs>
+                      <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
+                      </pattern>
+                      <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+
+              </div>
 
             <!-- Botão de envio -->
             <button type="submit">
