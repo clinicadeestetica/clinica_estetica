@@ -1,55 +1,141 @@
+@media (max-width: 767px){
+
+    .padrao{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr;
+    }
+
+    /* SIDEBAR OVERLAY */
+    .sidebar{
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        left: -250px;
+        top: 0;
+        transition: 0.3s;
+    }
+
+    .sidebar.ativo{
+        left:0;
+    }
+
+    /* HEADER MOBILE */
+    .header{
+        grid-column: 1;
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    .header_h2{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .header > p{
+        display: none; /* esconde "Bem-vinda" */
+    }
+
+    .header > img{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Ícone menu aparece */
+    .toggle_abrir{
+        display: block;
+    }
+
+    /* CONTEÚDO */
+    .main{
+        grid-column: 1;
+        padding: 10px;
+    }
+
+    /* EXEMPLO CARDS (caso tenha dashboard) */
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .header_h2{
+        display: none;
+    }
+}
+
+/* ---------------- TABLET ---------------- */
 
 @media (min-width: 768px) and (max-width: 1023px){
-    .toggle {
-        display: block;
-        margin-left: 215px;
-        margin-top: 7px;
-    }
-}
-
-@media (min-width: 1024px){
-}
-@media (max-width: 767px){
-     .toggle {
-        display: block;
-        margin-left: 215px;
-        margin-top: 7px;
-    }
 
     .padrao{
         grid-template-columns: 1fr;
     }
 
+    /* SIDEBAR OVERLAY */
     .sidebar{
         position: fixed;
-        top: 0;
-        left: -260px; /* escondido */
-        width: 247px;
-        height: 100%;
-        z-index: 1000;
+        width:250px;
+        height:100vh;
+        left:-250px;
+        top:0;
         transition: 0.3s;
     }
 
-    .sidebar.active{
-        left: 0; /* aparece */
+    .sidebar.ativo{
+        left:0;
     }
 
-    .toggle{
-        display: block;
-        position: absolute;
-        left: 15px;
-        top: 20px;
+    .header{
+        grid-column: 1;
     }
 
-    .close_sidebar{
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        background: none;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-        color: white;
+    .toggle_abrir{
+        display:block;
+    }
+
+    .main{
+        grid-column: 1;
+        padding: 15px;
+    }
+
+    /* CARDS EM 2 COLUNAS (igual imagem) */
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .header_h2{
+        display: none;
+    }
+}
+
+/* ---------------- DESKTOP ---------------- */
+
+@media (min-width:1024px){
+
+    .sidebar{
+        position: relative;
+        left:0;
+    }
+
+    .header{
+        grid-column: 2;
+    }
+
+    .main{
+        grid-column: 2;
+    }
+
+    .toggle_abrir{
+        display:none;
+    }
+
+    /* CARDS 2x2 */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .logo_mobile_e_tablet, .toggle_fechar{
+        display:none;
     }
 }
