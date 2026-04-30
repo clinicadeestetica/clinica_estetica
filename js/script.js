@@ -1,11 +1,11 @@
-const menu = document.querySelector(".menu");
-const abrir = document.querySelector(".menu-icon");
-const fechar = document.querySelector(".fechar");
+const menu = document.querySelector(".sidebar");
+const abrir = document.querySelector(".toggle_abrir");
+const fechar = document.querySelector(".toggle_fechar");
 
-abrir.addEventListener("click", function(){
+abrir.addEventListener("click", () => {
     menu.classList.add("ativo");
 });
 
-fechar.addEventListener("click", function(){
+fechar.addEventListener("click", () => {
     menu.classList.remove("ativo");
 });
