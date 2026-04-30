@@ -20,8 +20,8 @@
             <!-- Formulário de cadastro -->
             <form action="/enviar-dados" method="post">
 
-                <!-- div para organização dos inputs -->
-                <div class="form_cadastro">
+              <!-- div para organização dos inputs -->
+              <div class="form_cadastro">
 
                   <!-- CONTA -->
                   <!-- div para alinhamento dos icones -->
@@ -66,7 +66,7 @@
                   <!-- Senha -->
                 <!-- div para alinhamento dos icones -->
                 <div class="icon_cadastro">
-                <!-- Icone de email -->
+                <!-- Icone de senha -->
                 <span class="icon">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="32" height="32" fill="url(#pattern0_77_11)"/>
@@ -83,12 +83,20 @@
                   <!-- Campo de senha -->
                 <input type="password" id="senha" placeholder="Senha" required>
                 </div>
-                
+
+                <!-- Botao de carregar foto -->
+                <div class="upload_foto">
+                  <input type="file" id="fotoPerfil" hidden> <!-- esconde o input na tela-->
+                  <label for="fotoPerfil" class="btn_upload">
+                    Adicione uma foto de perfil
+                  </label>
                 </div>
 
+            </div>
+
                 
 
-              </div>
+        </div>
     </main>
 
   <script src="/js/script.js"></script>

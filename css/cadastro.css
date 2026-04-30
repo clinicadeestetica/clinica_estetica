@@ -73,3 +73,29 @@
     color: var(--cor-placeholder);
     opacity: 0.5;
 }
+
+.upload_foto {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.btn_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    padding: 16px;
+    border-radius: 45px;
+    background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_upload:hover {
+    opacity: 0.9;
+}
