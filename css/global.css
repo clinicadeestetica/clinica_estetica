@@ -16,6 +16,8 @@
   --cor-conteiner:#7B989A;
   --cor-placeholder: #002538;
   --cor-inputs: #F3FDFC;
+  --cor-button: #4F8F97;
+  --cor-button-hover: #316064;
   
   /* Tipografia */
   --font-family: "Poppins", sans-serif;
@@ -26,7 +28,7 @@
   --font-size-h1: 32px;
   --font-size-h2: 22px;
   --font-size-h3: 18px;
-  --font-size-h4: 14px;
+  --font-size-h4: 16px;
   --font-size-body: 14px;
   --font-size-small: 13px;
   --font-size-xs: 12px;
