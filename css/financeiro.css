@@ -1,0 +1,54 @@
+.main_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin:80px;
+    
+    gap: 30px 100px;
+}
+.main_cards--1 > svg{
+    margin-top: 19px;
+    margin-left: 20px;
+   
+}
+.main_cards--2 > svg{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.main_cards--3 > svg{
+    margin-top: 22px;
+    margin-left: 10px;
+}
+.main_cards--4 > svg{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.main_cards--1, .main_cards--2,.main_cards--3, .main_cards--4{
+    background-color: var(--cor-header);
+    max-width: 400px;
+    min-height: 162px;
+    border-radius: 20px
+}
+
+.card_texto_botao--1 > h1 , .card_texto_botao--2 > h1 , .card_texto_botao--3 > h1 , .card_texto_botao--4 > h1{
+  text-align: center;
+  gap:0px;
+  margin: 0px;
+  margin-top: -10px;
+  
+}
+.main_cards--1, .main_cards--2 , .main_cards--3 ,.main_cards--4{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    
+}
+
+.bnt_cards{
+    border-radius:8px;
+    height: 40px;
+    width: 134px;
+   
+}
+ .card_texto_botao--2 ,.card_texto_botao--3 {
+    padding-top:40px;
+}

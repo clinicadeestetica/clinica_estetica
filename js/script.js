@@ -9,3 +9,5 @@ abrir.addEventListener("click", () => {
 fechar.addEventListener("click", () => {
     menu.classList.remove("ativo");
 });
+
+
