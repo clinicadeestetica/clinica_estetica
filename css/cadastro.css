@@ -74,6 +74,7 @@
     opacity: 0.5;
 }
 
+/* Botao de carregar foto */
 .upload_foto {
     width: 100%;
     max-width: 450px;
@@ -87,7 +88,6 @@
     width: 100%;
     max-width: 450px;
     height: 40px;
-    padding: 16px;
     border-radius: 45px;
     background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
     color: white;
@@ -98,4 +98,22 @@
 
 .btn_upload:hover {
     opacity: 0.9;
+}
+
+/* Botao de criar conta */
+.btn_conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    border-radius: 45px;
+    background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    margin-top: 12px;
 }
