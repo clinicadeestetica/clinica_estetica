@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cadastre-se</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <main>
+  <main class="cadastro_main">
   <img src="/assets/logo_sem_escrita.png" alt="Logo">
 
         <div class="content_cadastro">
 
-          <div class="title-cadastro">
+          <div class="title_cadastro">
             <h2>Cadastre-se</h2>
             <span>Por favor, escolha a conta correspondente ao cargo e adicione um e-mail e senha</span>
           </div>
@@ -21,11 +21,11 @@
             <form action="/enviar-dados" method="post">
 
                 <!-- div para organização dos inputs -->
-                <div class="form-group">
+                <div class="form_cadastro">
 
                   <!-- CONTA -->
                   <!-- div para alinhamento dos icones -->
-                  <div class="icon-group">
+                  <div class="icon_cadastro">
                   <!-- Icone de conta -->
                   <span class="icon">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -39,12 +39,56 @@
                     </svg>
                   </span>
 
-                  <!-- Campo de conta (email) -->
+                  <!-- Campo de conta (usuario) -->
                   <input type="text" id="conta" placeholder="Conta" required>
                   </div>
 
+                  <!-- Email -->
+                  <!-- div para alinhamento dos icones -->
+                  <div class="icon_cadastro">
+                  <!-- Icone de email -->
+                  <span class="icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="32" height="32" fill="url(#pattern0_77_13)"/>
+                      <defs>
+                      <pattern id="pattern0_77_13" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_77_13" transform="scale(0.015625)"/>
+                      </pattern>
+                      <image id="image0_77_13" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                      </defs>
+                    </svg>
+                  </span>
 
+                  <!-- Campo de email -->
+                  <input type="email" id="email" placeholder="Email" required>
+                  </div>
+
+                  <!-- Senha -->
+                <!-- div para alinhamento dos icones -->
+                <div class="icon_cadastro">
+                <!-- Icone de email -->
+                <span class="icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="32" height="32" fill="url(#pattern0_77_11)"/>
+                    <defs>
+                    <pattern id="pattern0_77_11" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_77_11" transform="scale(0.015625)"/>
+                    </pattern>
+                    <image id="image0_77_11" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+
+                </span>
+
+                  <!-- Campo de senha -->
+                <input type="password" id="senha" placeholder="Senha" required>
                 </div>
+                
+                </div>
+
+                
+
+              </div>
     </main>
 
   <script src="/js/script.js"></script>

@@ -1,21 +1,21 @@
-main {
+.cadastro_main{
     display: flex;
     align-items: center; 
     justify-content: center; 
     gap: 60px; /* espaço entre imagem e formulário */
 }
 
-main img {
+.cadastro_main img {
     max-width: 400px;
     height: auto;
 }
 
-.title-cadastro{
-    max-width: 650px;   
+.title_cadastro{
+    width: 100%;
+    max-width: 450px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
 }
-
 
 .content_cadastro{
     background-color: var(--cor-conteiner-cadastro);
@@ -33,22 +33,24 @@ main img {
     font-size: var(--font-size-xs);
 }
 
-.form-group {
+.form_cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-top: 10px;
 }
 
-.icon-group {
+.icon_cadastro {
     position: relative;
-    width: 493px;
+    width: 100%;
+    max-width: 450px;
     margin-top: 9px; 
 }
 
 /* input */
-.icon-group input {
-    width: 520px;
+.icon_cadastro input {
+    width: 450px;
     height: 57px;
     padding: 15px 10px 15px 70px;
     border-radius: 8px;
@@ -58,7 +60,7 @@ main img {
 }
 
 /* ícone */
-.icon-group .icon {
+.icon_cadastro .icon {
     position: absolute;
     left: 15px;
     top: 50%; /* centraliza com o input */
@@ -66,7 +68,7 @@ main img {
 }
 
 /* Placeholder */
-.form-group input::placeholder {
+.form_cadastro input::placeholder {
     font-family: var(--font-family);
     color: var(--cor-placeholder);
     opacity: 0.5;
