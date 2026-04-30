@@ -1,141 +1,141 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---------------- BASE ---------------- */
 
-body{ 
-    height: 100%;
-    width: 100%;
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.padrao{
-    display: grid;
-    grid-template-columns: 247px 1fr;
-    grid-template-rows: 94px 1fr;
-    height: 100vh;
+.padrao {
+  display: grid;
+  grid-template-columns: 247px 1fr;
+  grid-template-rows: 94px 1fr;
+  height: 100vh;
 }
 
 /* ---------------- SIDEBAR ---------------- */
 
-.sidebar{
-    background-color: var(--cor-segundaria);
-    min-height: 100vh; 
-    grid-row: 1 / 3; 
-    grid-column: 1;
-    grid-row: 1 / 3; 
-    grid-column: 1;
-    z-index: 1000;
+.sidebar {
+  background-color: var(--cor-segundaria);
+  min-height: 100vh;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  z-index: 1000;
 }
 
-.sidebar_icon_link, .sidebar > a{
-    margin-left: 40px;
+.sidebar_icon_link,
+.sidebar > a {
+  margin-left: 40px;
 }
 
-.sidebar_link{
-    display:block;
-    font-family: var(--font-family);
-    color:var(--font-cor-segundaria);
-    font-weight: var(--font-weight-bold);
+.sidebar_link {
+  display: block;
+  font-family: var(--font-family);
+  color: var(--font-cor-segundaria);
+  font-weight: var(--font-weight-bold);
 }
 
-.sidebar_icon_link{
-    display: flex;
-    margin-top: 20px;
-    gap:8px;
+.sidebar_icon_link {
+  display: flex;
+  margin-top: 20px;
+  gap: 8px;
 }
 
-.img_sidebar{
-    width: 160px;
-    height: 160px;
-    display: flex;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}   
+.img_sidebar {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 .barra {
-    width: 1px;          
-    height: 60px;       
-    background-color: var(--cor-barra-header); 
-    margin: 0 10px;      
+  width: 1px;
+  height: 60px;
+  background-color: var(--cor-barra-header);
+  margin: 0 10px;
 }
 
-header{ 
-    display: flex;
-    background-color: var(--cor-header);
-    width: 100%;
-    height: 94px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
+  display: flex;
+  background-color: var(--cor-header);
+  width: 100%;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-header > img{
-    width: 55px;
-    height: 55px;
-    margin-left: 6px;
-    margin-right: 6px;
+header > img {
+  width: 55px;
+  height: 55px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 /* ---------------- HEADER ---------------- */
 
-header{ 
-    grid-column: 2;
-    display: flex;
-    background-color: var(--cor-header);
-    height: 94px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
+header {
+  grid-column: 2;
+  display: flex;
+  background-color: var(--cor-header);
+  height: 94px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
-.header_h2{
-    display:flex;
-    margin-left:75px;
-    color: var(--cor-placeholder);
+.header_h2 {
+  display: flex;
+  margin-left: 75px;
+  color: var(--cor-placeholder);
 }
 
-.header_h2--regular{
-    font-weight: var(--font-weight-regular);
+.header_h2--regular {
+  font-weight: var(--font-weight-regular);
 }
 
-header > p{
-    display: flex;
-    margin-left:20px;
-    font-size: 18px;
+header > p {
+  display: flex;
+  margin-left: 20px;
+  font-size: 18px;
 }
 
-header > p{
-    margin-left: auto;
-    margin-right: 10px;
+header > p {
+  margin-left: auto;
+  margin-right: 10px;
 }
 
-header > img, header> .barra {
-    display: flex;
-    margin-top: 0 auto;
-
+header > img,
+header > .barra {
+  display: flex;
+  margin-top: 0 auto;
 }
 
-header > img{
-    width: 45px;
-    height: 45px;
+header > img {
+  width: 45px;
+  height: 45px;
 }
 
 /* Ícone menu */
 .toggle_abrir {
-    font-size:30px;
-    cursor:pointer;
-    display: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
 }
 
 /* ---------------- CONTEÚDO ---------------- */
 
-.main{
-    grid-column: 2;
-    grid-row: 2;
-    padding: 20px;
+.main {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
 }

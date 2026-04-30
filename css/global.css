@@ -11,14 +11,14 @@
   /* CORES PRINCIPAIS */
   --cor-primaria: #73c0b0;
   --cor-segundaria: #4b908e;
-  --cor-header: #C0D6D4;
-  --cor-barra-header:#DCF3F1;
-  --cor-conteiner:#7B989A;
+  --cor-header: #c0d6d4;
+  --cor-barra-header: #dcf3f1;
+  --cor-conteiner: #7b989a;
   --cor-placeholder: #002538;
-  --cor-inputs: #F3FDFC;
-  --cor-button: #4F8F97;
+  --cor-inputs: #f3fdfc;
+  --cor-button: #4f8f97;
   --cor-button-hover: #316064;
-  
+
   /* Tipografia */
   --font-family: "Poppins", sans-serif;
   --font-cor-primaria: #316064;
@@ -78,4 +78,8 @@ p {
 span {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-medium);
+}
+
+a {
+  color: var(--font-cor-primaria);
 }
