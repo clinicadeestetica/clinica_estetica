@@ -1,11 +1,11 @@
-const toggle = document.querySelector(".toggle");
-const sidebar = document.querySelector(".sidebar");
-const closeBtn = document.querySelector(".close_sidebar");
+const menu = document.querySelector(".sidebar");
+const abrir = document.querySelector(".toggle_abrir");
+const fechar = document.querySelector(".toggle_fechar");
 
-toggle.addEventListener("click", () => {
-    sidebar.classList.add("active");
+abrir.addEventListener("click", () => {
+    menu.classList.add("ativo");
 });
 
-closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("active");
+fechar.addEventListener("click", () => {
+    menu.classList.remove("ativo");
 });

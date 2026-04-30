@@ -10,10 +10,10 @@
   <main>
   <div class="padrao">
     <div class="sidebar">
-      <script src="script.js"></script>
-
       
-      <svg class="toggle" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- icone de x -->
+       <div class="toggle_fechar">
+      <svg  width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="23" height="23" fill="url(#pattern0_185_789)"/>
         <defs>
         <pattern id="pattern0_185_789" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -22,7 +22,7 @@
         <image id="image0_185_789" width="64" height="64" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
         </defs>
       </svg>
-
+      </div>
       <div  class="img_sidebar">
         <img src="./assets/logo_sem_escrita.png" alt="Logo" >
       </div>
@@ -147,6 +147,8 @@
     
     <header>
 
+    <header class="header">
+      <div class="toggle_abrir" >
       <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="50" height="50" fill="url(#pattern0_79_16)"/>
         <defs>
@@ -158,6 +160,10 @@
       </svg>
 
       <div class="header_h2">
+      </div>
+<img class="logo_mobile_e_tablet" src="/assets/logo_mobile_e_tablet.png" alt="logo">
+      <div class="header_h2">
+      
         <h2 class="header_h2--bold">Financeiro/</h2>
         <h2  class="header_h2--regular">Dashboard</h2>
       </div>
@@ -172,5 +178,7 @@
     
     </div>
   </main>
+  <script src="/js/script.js"></script>
+
 </body>
 </html>
