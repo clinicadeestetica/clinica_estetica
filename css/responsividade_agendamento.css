@@ -1,0 +1,80 @@
+/* --Tablet-- */
+@media (max-width: 1024px) {
+    .content-agendamento {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .campo-select,
+    .icon-group {
+        width: 100%;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+/* --Celular-- */
+@media (max-width: 600px) {
+    .titulo {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .titulo h2 {
+        font-size: 22px;
+    }
+
+    .titulo h4 {
+        font-size: 14px;
+    }
+
+    .content-agendamento {
+        width: 95%;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .icon-group,
+    .campo-select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .icon-group input,
+    .campo-select select,
+    .campo-select input {
+        width: 100%;
+        padding-left: 45px;
+        font-size: 14px;
+    }
+
+    .icon-group .icon {
+        left: 10px;
+    }
+
+    .label {
+        left: 45px;
+        font-size: 13px;
+    }
+
+    .icon-seta {
+        right: 10px;
+        left: auto;
+    }
+
+    form p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}

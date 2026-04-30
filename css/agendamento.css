@@ -116,7 +116,7 @@
 /* ícone da seta */
 .icon-seta {
     position: absolute;
-    left: 460px;
+    right: 15px;
     top: 55%;
     transform: translateY(-50%);
     pointer-events: none; /* para que o clique no ícone e ative o select */
