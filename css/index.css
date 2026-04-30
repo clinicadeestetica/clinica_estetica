@@ -1,0 +1,65 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTAINER PRINCIPAL */
+.dashboard-principal {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px;
+  text-align: center;
+}
+.card {
+  background: linear-gradient(135deg, #316064);
+  color: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(135deg, #316064, #5B908E);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(135deg, #4B908E, #73C0B0);
+}
+
+.card:nth-child(4) {
+  background: linear-gradient(135deg, #73C0B0);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
