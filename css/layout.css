@@ -83,7 +83,7 @@ header > img{
 
 /* ---------------- HEADER ---------------- */
 
-.header{ 
+header{ 
     grid-column: 2;
     display: flex;
     background-color: var(--cor-header);
@@ -109,15 +109,18 @@ header > p{
     font-size: 18px;
 }
 
-.header > p{
+header > p{
     margin-left: auto;
     margin-right: 10px;
 }
 
-header > img, .header> .barra {
+header > img, header> .barra {
     display: flex;
     margin-top: 0 auto;
-.header > img{
+
+}
+
+header > img{
     width: 45px;
     height: 45px;
 }
