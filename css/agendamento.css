@@ -188,7 +188,7 @@ form p{
     color: var(--cor-placeholder);
 }
 
-button {
+.bta_agend {
     display: flex;
     align-items: center;      
     justify-content: center;  
@@ -210,11 +210,11 @@ button {
 }
 
 /* efeito hover */
-button:hover {
+.bta_agend:hover {
     background: var(--cor-button-hover);
 }
 
 /* efeito ao clicar */
-button:active {
+.bta_agend:active {
     transform: scale(0.98);
 }
