@@ -71,6 +71,7 @@ header > img{
 .header_h2{
     display:flex;
     margin-left:75px;
+    color: var(--cor-placeholder);
 }
 
 .header_h2--regular{
