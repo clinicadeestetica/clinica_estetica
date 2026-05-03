@@ -1,10 +1,11 @@
+main{
+    margin:70px;
+}
 .main_cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin:80px;
-    
-    gap: 30px 100px;
+    gap: 40px 120px;
 }
 .main_cards--1 > svg{
     margin-top: 19px;
@@ -47,8 +48,91 @@
     border-radius:8px;
     height: 40px;
     width: 134px;
+    background-color: #85BDB0;
+    color: var(--font-cor-primaria);
    
 }
  .card_texto_botao--2 ,.card_texto_botao--3 {
     padding-top:40px;
+}
+
+.main_formas_pagamento > h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.formas_pagamento_cards{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 60px;
+}
+
+.formas_pagamento_cards--1, .formas_pagamento_cards--2, .formas_pagamento_cards--3{
+    background-color: #85BDB0;   
+    width: 234px;
+    height: 40px;
+    border-radius: 8px;
+    
+}
+.formas_pagamento_cards--1 > h3, .formas_pagamento_cards--2 > h3, .formas_pagamento_cards--3 > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.table_th{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+
+.table_th > h4{
+    margin-left: 420px;
+    
+}
+
+.financeiro_table{
+    margin-top: 90px;
+    width: 100%;
+    background-color: rgba(191, 213, 211, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tabela_barra_pesquisa {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 10px;
+    background-color: rgba(133, 189, 176, 0.5);
+    margin-top: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+}
+.tabela_barra_pesquisa > input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: auto;
+    
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color:black;
+    width: 103%;
+    height: 2px;
+    margin-left: -12px;
 }
