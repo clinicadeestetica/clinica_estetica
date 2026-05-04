@@ -163,7 +163,7 @@ main{
 }
 
 /* ícone da seta */
-.icon-seta {
+.icon_seta {
     position: absolute;
     right: 15px;
     top: 55%;
@@ -194,4 +194,36 @@ main{
     color: var(--cor-placeholder);
     opacity: 0.5;
     font-family: var(--font-family);
+}
+
+/* remove estilo padrão de date e time */
+.campo_selecao input[type="date"] {
+    width: 100%;
+    width: 321px;
+    height: 47px;
+    padding-left: 100px;
+    padding-right: 40px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: var(--font-family);
+    color: transparent; /* esconde o texto da data selecionada */
+    opacity: 0.5;
+}
+
+/* remove ícones padrão do navegador */
+/* icone de calendario e relogio */
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 321px;
+    height: 47px;
+    cursor: pointer;
+}
+
+/* usuario seleciona a data e aparece selecionado */
+input[type="date"]:focus, /* usuario clica no campo e volta ao normal */
+input[type="date"]:valid { /* mantem data selecionada mesmo sem selecionar depois */
+    color: var(--cor-placeholder);
 }
