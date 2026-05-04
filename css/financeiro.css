@@ -136,3 +136,62 @@ main{
     height: 2px;
     margin-left: -12px;
 }
+
+.input_selecao {
+    width: 100%;
+    max-width: 321px;
+    height: 47px;
+    padding: 15px 10px 15px 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    appearance: none; /* remove icone padrão */
+    outline: none;
+    cursor: pointer;
+}
+
+.campo_selecao {
+    width: 100%;
+    max-width: 321px;
+    height: 47px;
+    background-color: rgba(133, 189, 176, 0.5);    
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    border: 1px solid #ccc;
+}
+
+/* ícone da seta */
+.icon-seta {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none; /* para que o clique no ícone e ative o select */
+}
+
+/* textos a esquerda */
+.label_financeiro {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 20px;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+}
+
+/* select */
+.campo_selecao select {
+    width: 100%;
+    max-width: 321px;
+    height: 47px;
+    padding-left: 100px; /* espaço para texto */
+    padding-right: 40px;
+    border: none;
+    background: transparent;
+    appearance: none;
+    outline: none;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+    font-family: var(--font-family);
+}
