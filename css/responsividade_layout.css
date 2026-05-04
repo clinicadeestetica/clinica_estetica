@@ -49,6 +49,7 @@
     /* Ícone menu aparece */
     .toggle_abrir{
         display: block;
+        
     }
 
     /* CONTEÚDO */
@@ -57,15 +58,25 @@
         grid-template-columns: 1fr ;
         padding: 10px;
     }
-
     
     .header_h2{
         display: none;
     }
     header > p{
-   display:none;
-}
+        display:none;
 
+    }
+    .toggle_fechar{
+        margin-left: 88%; 
+    }
+     .logo_mobile_e_tablet{
+        min-height: 140px;
+        min-width:190px;
+    }
+
+    header > .barra{
+        display: none;
+    }
 }
 
 /* ---------------- TABLET ---------------- */
@@ -92,15 +103,19 @@
     }
 
     header > img{
-        width: 35px;
-        height: 35px;
-        align-items: end;
-        justify-content: end;
-        margin-left: auto;
+        width: 45px;
+        height: 45px;
+        
     }
 
     header{
         grid-template-columns: 1fr;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; 
+    }
+    .header_h2{
+        margin-left: auto;
     }
 
     .toggle_abrir{
@@ -111,13 +126,20 @@
         grid-template-columns: 1fr;
         padding: 15px;
     }
-    header> p{
-         margin-left: auto;
-    }
     
     
     header > p{
         display: none;
+    }
+
+    .logo_mobile_e_tablet{
+        min-height: 140px;
+        min-width:190px;
+        margin-left: -35px;
+    }
+
+    .toggle_fechar{
+        margin-left: 88%;
     }
 }
 

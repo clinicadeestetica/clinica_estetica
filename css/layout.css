@@ -8,6 +8,7 @@
 
 html{
     height: 100%;
+    width: 100%;
 }
 body{ 
     display: grid;
@@ -58,7 +59,7 @@ body{
     width: 1px;          
     height: 60px;       
     background-color: var(--cor-barra-header); 
-    margin: 0 10px;      
+       
 }
 
 header { 
@@ -75,7 +76,7 @@ header > img{
     width: 55px;
     height: 55px;
     margin-left: 6px;
-    margin-right: 6px;
+    
     align-items: end;
     justify-content: end;
  
@@ -93,7 +94,7 @@ header > img{
 }
 
 header > p {
-     margin-left: auto;
+    margin-left: auto;
     font-size: 18px;
 }
 
