@@ -1,0 +1,193 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.dashboard{
+  width:100%;
+  max-width:806px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:24px;
+  margin:auto;
+}
+
+/* CARDS */
+
+.card{
+  background:#b9d0cd;
+  border-radius:16px;
+  justify-content: center;;
+}
+
+/* CARD ESQUERDO */
+
+.stock-card{
+  width:468px;
+  height:286px;
+  padding:16px 22px;
+}
+
+.title{
+  text-align:center;
+  font-size:17px;
+  font-weight:700;
+  color:#2f5d64;
+  margin-top:2px;
+}
+
+.content{
+  display:flex;
+  justify-content: center; 
+  margin-top:22px;
+}
+
+/* DONUT */
+
+.chart{
+  width:220px;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.donut{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background:
+  conic-gradient(
+    #375d64 0deg 60deg,
+    #4d737a 60deg 145deg,
+    #658f95 145deg 220deg,
+    #8bb7b1 220deg 275deg,
+    #bccdcd 275deg 330deg,
+    #dce9df 330deg 360deg
+  );
+  position:relative;
+}
+
+.donut::before{
+  content:'';
+  position:absolute;
+  width:78px;
+  height:78px;
+  background:#b9d0cd;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+}
+
+.center span{
+  font-size:18px;
+  font-weight:700;
+  color:#3b5f65;
+}
+
+/* LEGENDA */
+
+.legend{
+  width:185px;
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+  margin-right:8px;
+  margin-top:-5px;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.legend-item p{
+  font-size:14px;
+  color:#496f74;
+  font-weight:500;
+}
+
+.dot{
+  width:14px;
+  height:14px;
+  border-radius:3px;
+  flex-shrink:0;
+}
+
+.dot1{ background:#375d64; }
+.dot2{ background:#4d737a; }
+.dot3{ background:#658f95; }
+.dot4{ background:#8bb7b1; }
+.dot5{ background:#bccdcd; }
+.dot6{ background:#dce9df; }
+
+/* CARD DIREITO */
+
+.alert-card{
+  width:298px;
+  height:286px;
+  padding:16px 18px;
+  overflow:hidden;
+}
+
+.alerts{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  margin-top:14px;
+}
+
+.alert-box{
+  background:#ddd69d;
+  border-radius:12px;
+  padding:18px 16px;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  width:264px;
+  min-height:84px;
+}
+
+.icon{
+  font-size:22px;
+  color:#8b7428;
+  margin-top:-2px;
+}
+
+.alert-text h3{
+  font-size:14px;
+  line-height:1.35;
+  font-weight:500;
+  color:#42686e;
+  margin-bottom:8px;
+}
+
+.alert-text p{
+  font-size:12px;
+  color:#54797e;
+  font-weight:500;
+}
+
+/* SCROLL */
+
+.scroll-bar{
+  position:absolute;
+  top:14px;
+  right:0;
+  width:4px;
+  height:128px;
+  background:#6ea59d;
+  border-radius:20px;
+}
