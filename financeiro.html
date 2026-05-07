@@ -269,11 +269,10 @@
       </div>
       <div class="main_tabela">
         
-        <table class="financeiro_table">
-          <th class="table_th">
+        <div class="main_tabela_topo">
             <h2>Registro de atendimentos pagos</h2>
 
-             <div class="ver_mais">
+             
             <h4> Ver mais</h4>
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="25.1788" height="25.1788" fill="url(#pattern0_402_164)"/>
@@ -285,11 +284,11 @@
             </defs>
             </svg>
             </div>
-
-          </th>
-          <tr><td><div class="linha"></div></td></tr>
-          <tr>
-            <td class="table_td_barra_pesquisa">
+        
+         
+          <div class="linha"></div>
+         
+          
               <div class="tabela_barra_pesquisa">
                 <input type="search"  placeholder="Atendimento">
                 <span>
@@ -304,44 +303,11 @@
                 </svg>
               </span>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="td_tabela_campo_selecao">
-              <div class="tabela_campo_selecao" >
-                <!-- lado esquerdo de serviço com texto-->
-                    <span class="label_financeiro_selecao">Serviço</span>
 
-                    <!-- select de serviço -->
-                    <select class="input_selecao" id="servico" required>
-                      <option disabled selected></option>
-                      <option>Preenchimento Labial</option>
-                      <option>Botox</option>
-                      <option>Massagem Facial</option>
-                      <option>Peeling Químico</option>
-                      <option>Limpeza de Pele</option>
-                      <option>Microagulhamento</option>
-                      <option>Drenagem Linfática</option>
-                    </select>
-
-                    <!-- seta ao lado de selecione um serviço -->
-                    <span class="icon_seta">
-                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
-                        <defs>
-                        <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
-                        </pattern>
-                        <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
-                        </defs>
-                      </svg>
-                    </span>
-
-                  </div>
-      </div>
-            </td>
-            <td>
-              <div class="tabela_campo_selecao">
+      <div class="main_tabela_selecao">
+              
+         
+            <div class="tabela_campo_selecao">
                     <!-- DATA -->
                     <!-- lado esquerdo de data com texto -->
                     <span class="label_financeiro_selecao">Data</span>
@@ -361,15 +327,72 @@
                       </svg>
                     </span>
                   </div>
-            </td>
-          
-            <td><div>
-              
-            </div></td>
-          </tr>
-        </table>
 
+                  <div class="tabela_campo_selecao" >
+                <!-- lado esquerdo de serviço com texto-->
+                    <span class="label_financeiro_selecao">Valor</span>
+
+                    <!-- select de serviço -->
+                    <select class="input_selecao" id="valor" required>
+                      <option disabled selected></option>
+                      <option>R$8000,00</option>
+                      <option>R$6000,00</option>
+                      <option>R$1500,00</option>
+                      <option>R$2500,00</option>
+                      <option>R$1800,00</option>
+                      <option>R$3500,00</option>
+                      <option>R$2000,00</option>
+                    </select>
+
+                    <!-- seta ao lado de selecione um serviço -->
+                    <span class="icon_seta">
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
+                        <defs>
+                        <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
+                        </pattern>
+                        <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
+                        </defs>
+                      </svg>
+                    </span>
+
+            </div>
+            <div class="tabela_campo_selecao" >
+                <!-- lado esquerdo de serviço com texto-->
+                    <span class="label_financeiro_selecao">Serviço</span>
+
+                    <!-- select de serviço -->
+                    <select class="input_selecao" id="servico" required>
+                      <option disabled selected></option>
+                      <option>Bruna Souza</option>
+                      <option>Vitor Guilherme</option>
+                      <option>Felipe Camargo</option>
+                      <option>Paulo Silva</option>
+                      <option>Vitória Almeida</option>
+                      <option>Talita Figueira</option>
+                      <option>Cristiano Pinto</option>
+                    </select>
+
+                    <!-- seta ao lado de selecione um serviço -->
+                    <span class="icon_seta">
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect opacity="0.6" width="17" height="17" fill="url(#pattern0_232_75)"/>
+                        <defs>
+                        <pattern id="pattern0_232_75" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_232_75" transform="scale(0.03125)"/>
+                        </pattern>
+                        <image id="image0_232_75" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAZ9JREFUWIXtkb0vA2EcgJ/fVZQaCBOD+A+0bhJfR2IwYzCphNt9LCKRWiyIUUITH5OETSwSYmASdf4KErEaqu61tKHtnbZvyyD3JJdL7pf7PU/eFwICAgArkagzbbv5r3zReLzFSiTqACQanx0VOAZaUZwaYWP6fnf37TfEpm1H3PTHEcg48KpgyhDYAVoBECbctHtu2nbkd+TueVYO0CawY6AoPHqr1hFfcqy8gaLZENSGxz81i/CVA4hshp4eH247oj31wEDBuMvNuENtfb0nL3d36SrkZ8Bw4Uwp2XYO91ZDAE9O6sorQkQ6jXRmUCfim3zER74AEMp9rGVEufK8gFpFVCIvCqg2olK5Z4BuhI7cNyAX0d5thpHSEbpyAPEb5IhNz60jarl4sbp5bwqPNWQyrq68rACA2MzsJopFj9F19m15bN562E8uldrtewXfeXZSF17XAXRlnzyUkm3nIOkVrBcA8PyYuvSJKJaXOHatgHIiKpVXHPBThI5cK+ArIqYQ6QdcYM05TK7o7KoK07YjvZPzjX8uDgj4V3wCjvEVRbjkO9oAAAAASUVORK5CYII="/>
+                        </defs>
+                      </svg>
+                    </span>
+
+            </div>
+           
+                  </div>
       </div>
+      </div>
+      
     </main>
     
   </div>
