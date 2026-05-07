@@ -1,0 +1,119 @@
+.cadastro_main{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 60px; /* espaço entre imagem e formulário */
+}
+
+.cadastro_main img {
+    max-width: 400px;
+    height: auto;
+}
+
+.title_cadastro{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content_cadastro{
+    background-color: var(--cor-conteiner-cadastro);
+    padding: 25px;
+    margin-top: 25px;
+    height: 550px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-direction: column;
+}
+
+.content_cadastro span{
+    font-size: var(--font-size-xs);
+}
+
+.form_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.icon_cadastro {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 9px; 
+}
+
+/* input */
+.icon_cadastro input {
+    width: 450px;
+    height: 57px;
+    padding: 15px 10px 15px 70px;
+    border-radius: 8px;
+    border: 2px solid #E5E4E9;
+    outline: none;
+    background: var(--font-cor-segundaria);
+}
+
+/* ícone */
+.icon_cadastro .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%; /* centraliza com o input */
+    transform: translateY(-50%); /* fica centralizado verticalmente */
+}
+
+/* Placeholder */
+.form_cadastro input::placeholder {
+    font-family: var(--font-family);
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+}
+
+/* Botao de carregar foto */
+.upload_foto {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.btn_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    border-radius: 45px;
+    background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_upload:hover {
+    opacity: 0.9;
+}
+
+/* Botao de criar conta */
+.btn_conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    border-radius: 45px;
+    background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    margin-top: 12px;
+}
