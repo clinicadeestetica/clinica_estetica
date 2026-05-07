@@ -1,0 +1,152 @@
+.professionals {
+  max-width: 695px;
+  padding: 30px;
+  text-align: center;
+  margin-top: -40px;
+  margin: 140px auto;
+}
+
+/* ELEMENTS */
+.professionals__title {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.professionals__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: color-mix(in srgb, var(--cor-segundaria) 37%, transparent);
+
+  border-radius: 20px;
+}
+
+.professionals__head {
+  background-color: color-mix(in srgb, var(--cor-segundaria) 37%, transparent);
+  border-radius: 20px;
+}
+
+.professionals__header1 {
+  padding: 12px;
+  text-align: center;
+  color: #2f5d5d;
+  border-top-left-radius: 20px;
+}
+
+.professionals__header2 {
+  padding: 12px;
+  text-align: center;
+  color: #2f5d5d;
+  border-top-right-radius: 20px;
+}
+
+.professionals__row :hover {
+  background-color: rgba(225, 225, 225, 0.2);
+}
+
+.professionals__cell {
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* MODIFIER */
+.professionals__cell--user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.professionals__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.professionals__name {
+  font-weight: 500;
+}
+
+.agenda {
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* ESCONDE OS RADIOS */
+input[type="radio"] {
+  display: none;
+}
+
+/* ABAS */
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  padding: 12px 25px;
+  background: #b7d0d0;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+}
+
+/* ABA ATIVA */
+#tab-agenda:checked ~ .tabs label[for="tab-agenda"],
+#tab-especialidades:checked ~ .tabs label[for="tab-especialidades"] {
+  background: #e3f1f1;
+  font-weight: bold;
+}
+
+/* CONTEÚDO */
+.content {
+  background: #e3f1f1;
+  padding: 20px;
+  border-radius: 0 12px 12px 12px;
+}
+
+/* ESCONDE TUDO */
+.tab-content {
+  display: none;
+}
+
+/* MOSTRA O ATIVO */
+#tab-agenda:checked ~ .content .agenda-content {
+  display: block;
+}
+
+#tab-especialidades:checked ~ .content .especialidades-content {
+  display: block;
+}
+
+/* CALENDÁRIO */
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #9dbcbc;
+  padding: 10px;
+  height: 80px;
+  vertical-align: top;
+}
+
+/* TAREFAS */
+.task {
+  height: 10px;
+  background: #4f7c7c;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* CARDS */
+.cards-especialidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card-especialidade {
+  background: #9dbcbc;
+  padding: 15px;
+  border-radius: 12px;
+}
