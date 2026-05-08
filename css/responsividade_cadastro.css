@@ -1,0 +1,68 @@
+/* Tablet responsivo */
+@media (max-width: 1280px){
+
+    /* main principal */
+    .cadastro_main{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* logo grande ao lado de content_cadastro */
+    .logo_cadastro{
+        max-width: 220px;
+    }
+
+    /* container de formulário principal do cadastro */
+    .content_cadastro{
+        width: 90%;
+        max-width: 650px;
+    }
+}
+
+/* Mobile responsivo */
+@media (max-width: 767px){
+
+    /* main principal */
+    .cadastro_main{
+        padding: 15px;
+        gap: 20px;
+    }
+
+    /* logo grande ao lado de content_cadastro */
+    .logo_cadastro{
+        max-width: 180px;
+    }
+
+    /* container de formulário principal do cadastro */
+    .content_cadastro{
+        width: 100%;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    /* títulos do formulário */
+    .title_cadastro{
+        text-align: center;
+    }
+
+    .title_cadastro h2{
+        font-size: 30px;
+    }
+
+    .title_cadastro span{
+        font-size: 14px;
+    }
+
+    /* icones dentro do input */
+    .icon_cadastro input{
+        height: 52px;
+        padding-left: 60px;
+    }
+
+    /* botões */
+    .btn_upload,
+    .btn_conta{
+        height: 45px;
+        font-size: 15px;
+    }
+}

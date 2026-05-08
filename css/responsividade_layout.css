@@ -1,3 +1,4 @@
+/* --- Celular --- */
 @media (max-width: 767px){
 
     body{
@@ -79,8 +80,8 @@
     }
 }
 
-/* ---------------- TABLET ---------------- */
 
+/* --- TABLET ---*/
 @media (min-width: 768px) and (max-width: 1280px){
 
     body{
@@ -143,21 +144,28 @@
     }
 }
 
-/* ---------------- DESKTOP ---------------- */
 
-@media (min-width:1281px) and (max-width: 1500px){
+/* --- Desktop --- */
+@media (min-width: 1281px){
+
+    body{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
 
     .sidebar{
         position: relative;
-        left:0;
+        width: 250px;
+        height: 100vh;
+        left: 0;
     }
 
     .toggle_abrir{
         display:none;
     }
 
-    
-    .logo_mobile_e_tablet, .toggle_fechar{
+    .logo_mobile_e_tablet,
+    .toggle_fechar{
         display:none;
     }
 }
