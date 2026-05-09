@@ -1,3 +1,4 @@
+/* main principal */
 .cadastro_main{
     display: flex;
     align-items: center; 
@@ -7,12 +8,14 @@
     padding: 20px;
 }
 
+/* imagem ao lado do formulário */
 .cadastro_main img {
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
+/* título do formulário */
 .title_cadastro{
     width: 100%;
     max-width: 450px;
@@ -20,6 +23,7 @@
     text-align: left;
 }
 
+/* conteúdo do formulário */
 .content_cadastro{
     background-color: var(--cor-conteiner-cadastro);
     padding: 25px;
@@ -37,6 +41,7 @@
     font-size: var(--font-size-xs);
 }
 
+/* formulário */
 .form_cadastro {
     display: flex;
     flex-direction: column;
@@ -45,7 +50,8 @@
     margin-top: 10px;
 }
 
-.icon_cadastro {
+/* div de alinhamento de icones e inputs */
+.group_cadastro {
     position: relative;
     width: 100%;
     max-width: 450px;
@@ -53,7 +59,7 @@
 }
 
 /* input */
-.icon_cadastro input {
+.group_cadastro input {
     width: 100%;
     max-width: 450px;
     height: 57px;
@@ -65,7 +71,7 @@
 }
 
 /* ícone */
-.icon_cadastro .icon {
+.group_cadastro .icon {
     position: absolute;
     left: 15px;
     top: 50%; /* centraliza com o input */
@@ -100,7 +106,6 @@
     cursor: pointer;
     transition: 0.3s;
     font-family: var(--font-family);
-    font-weight: var(--font-weight-bold);
 }
 
 .btn_upload:hover {
@@ -127,9 +132,34 @@
     font-weight: var(--font-weight-bold);
 }
 
+.btn_conta:hover {
+    background: var(--cor-button-hover);
+    transition: 0.7s;
+}
+
 /* linha a baix0 do botao */
 .content_cadastro hr {
-    margin: 20px;
+    margin-top: 28px;
+    width: 100%;
+    max-width: 450px;
     border: none;
-    border-top: 1px solid #E5E4E9;
+    border-top: 1px solid #ECECEC;
+    align-self: center; /* centraliza no flex */
+}
+
+/* container do login_redirect */
+.login_redirect{
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* link de login */
+.login_redirect a{
+    font-size: var(--font-size-body);
+    color: var(--font-cor-terciaria);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
 }
