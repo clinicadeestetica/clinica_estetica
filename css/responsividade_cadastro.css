@@ -40,29 +40,13 @@
         min-height: auto;
     }
 
-    /* títulos do formulário */
-    .title_cadastro{
-        text-align: center;
-    }
-
+    /* deixar o titulo e span um pouco maiores */
     .title_cadastro h2{
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .title_cadastro span{
         font-size: 14px;
     }
 
-    /* icones dentro do input */
-    .icon_cadastro input{
-        height: 52px;
-        padding-left: 60px;
-    }
-
-    /* botões */
-    .btn_upload,
-    .btn_conta{
-        height: 45px;
-        font-size: 15px;
-    }
 }
