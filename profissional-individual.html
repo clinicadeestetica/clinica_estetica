@@ -370,167 +370,204 @@
 
         <img src="assets/perfil.png" alt="Perfil" />
       </header>
-      <main class="agenda-profissional">
-        <!-- CONTROLE DAS ABAS -->
-        <input type="radio" name="tab" id="tab-agenda" checked />
-        <input type="radio" name="tab" id="tab-especialidades" />
+      <main>
+        <section class="cartao-profissional">
+          <div class="cartao-profissional__container">
+            <div class="cartao-profissional__area-imagem">
+              <img
+                class="cartao-profissional__imagem"
+                src="./assets/perfil.png"
+                alt="Foto da Dra. Laura Morais"
+              />
+            </div>
 
-        <!-- BOTÕES -->
-        <div class="agenda-profissional__tabs">
-          <label for="tab-agenda" class="agenda-profissional__tab"
-            >Agenda</label
-          >
-          <label for="tab-especialidades" class="agenda-profissional__tab"
-            >Especialidades</label
-          >
-        </div>
+            <div class="cartao-profissional__conteudo">
+              <h2 class="cartao-profissional__nome">Dr. Laura Morais</h2>
 
-        <!-- CONTEÚDO -->
-        <section class="content-profissional">
-          <!-- CALENDÁRIO -->
-          <div class="tab-content agenda-content">
-            <table class="calendar">
-              <thead>
-                <tr>
-                  <th>Dom</th>
-                  <th>Seg</th>
-                  <th>Ter</th>
-                  <th>Qua</th>
-                  <th>Qui</th>
-                  <th>Sex</th>
-                  <th>Sáb</th>
-                </tr>
-              </thead>
+              <p class="cartao-profissional__profissao">
+                Dermatologista e Esteticista
+              </p>
 
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    7
-                    <div class="task"></div>
-                    <div class="task"></div>
-                  </td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>
-                    10
-                    <div class="task"></div>
-                  </td>
-                  <td>11</td>
-                  <td>12</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>
-                    15
-                    <div class="task"></div>
-                  </td>
-                  <td>16</td>
-                  <td>17</td>
-                  <td>18</td>
-                  <td>19</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>
-                    22
-                    <div class="task"></div>
-                  </td>
-                  <td>
-                    23
-                    <div class="task"></div>
-                  </td>
-                  <td>24</td>
-                  <td>
-                    25
-                    <div class="task"></div>
-                  </td>
-                  <td>26</td>
-                </tr>
-                <tr>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              <div class="cartao-profissional__contatos">
+                <a class="cartao-profissional__info" href="tel:+5511953956295">
+                  <span class="cartao-profissional__icone">📞</span>
+                  (11) 95395-6295
+                </a>
 
-          <!-- ESPECIALIDADES -->
-          <div class="tab-content especialidades-content">
-            <div class="especialidades">
-              <div class="especialidades__card">
-                <div class="especialidades__circle">
-                  <svg
-                    class="especialidades__svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <circle
-                      cx="11"
-                      cy="11"
-                      r="7"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                    <path
-                      d="M20 20L17 17"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                  </svg>
-                </div>
-
-                <div class="especialidades__content">
-                  <h3 class="especialidades__title">Botox</h3>
-
-                  <p class="especialidades__description">
-                    Procedimento estético para suavização de linhas de
-                    expressão.
-                  </p>
-                </div>
-              </div>
-
-              <div class="especialidades__card">
-                <div class="especialidades__circle">
-                  <svg
-                    class="especialidades__svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M12 3C12 3 7 9 7 13a5 5 0 0010 0c0-4-5-10-5-10z"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                  </svg>
-                </div>
-
-                <div class="especialidades__content">
-                  <h3 class="especialidades__title">Hidratação Facial</h3>
-
-                  <p class="especialidades__description">
-                    Tratamento intensivo para revitalização e brilho da pele.
-                  </p>
-                </div>
+                <a
+                  class="cartao-profissional__info"
+                  href="mailto:laura_morais@gmail.com"
+                >
+                  <span class="cartao-profissional__icone">✉</span>
+                  laura_morais@gmail.com
+                </a>
               </div>
             </div>
           </div>
+        </section>
+
+        <section class="agenda-profissional">
+          <!-- CONTROLE DAS ABAS -->
+          <input type="radio" name="tab" id="tab-agenda" checked />
+          <input type="radio" name="tab" id="tab-especialidades" />
+
+          <!-- BOTÕES -->
+          <div class="agenda-profissional__tabs">
+            <label for="tab-agenda" class="agenda-profissional__tab"
+              >Agenda</label
+            >
+            <label for="tab-especialidades" class="agenda-profissional__tab"
+              >Especialidades</label
+            >
+          </div>
+
+          <!-- CONTEÚDO -->
+          <section class="content-profissional">
+            <!-- CALENDÁRIO -->
+            <div class="tab-content agenda-content">
+              <table class="calendar">
+                <thead>
+                  <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sáb</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      7
+                      <div class="task"></div>
+                      <div class="task"></div>
+                    </td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>
+                      10
+                      <div class="task"></div>
+                    </td>
+                    <td>11</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>
+                      15
+                      <div class="task"></div>
+                    </td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>
+                      22
+                      <div class="task"></div>
+                    </td>
+                    <td>
+                      23
+                      <div class="task"></div>
+                    </td>
+                    <td>24</td>
+                    <td>
+                      25
+                      <div class="task"></div>
+                    </td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- ESPECIALIDADES -->
+            <div class="tab-content especialidades-content">
+              <div class="especialidades">
+                <div class="especialidades__card">
+                  <div class="especialidades__circle">
+                    <svg
+                      class="especialidades__svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M20 20L17 17"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="especialidades__content">
+                    <h3 class="especialidades__title">Botox</h3>
+
+                    <p class="especialidades__description">
+                      Procedimento estético para suavização de linhas de
+                      expressão.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="especialidades__card">
+                  <div class="especialidades__circle">
+                    <svg
+                      class="especialidades__svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M12 3C12 3 7 9 7 13a5 5 0 0010 0c0-4-5-10-5-10z"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="especialidades__content">
+                    <h3 class="especialidades__title">Hidratação Facial</h3>
+
+                    <p class="especialidades__description">
+                      Tratamento intensivo para revitalização e brilho da pele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </main>
     </div>
