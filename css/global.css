@@ -18,11 +18,13 @@
   --cor-inputs: #F3FDFC;
   --cor-button: #4F8F97;
   --cor-button-hover: #316064;
+  --cor-conteiner-cadastro: #FDFBFE;
   
   /* Tipografia */
   --font-family: "Poppins", sans-serif;
   --font-cor-primaria: #316064;
   --font-cor-segundaria: #ffffff;
+  --font-cor-terciaria: #217676;
 
   /* FONT SIZE */
   --font-size-h1: 32px;
