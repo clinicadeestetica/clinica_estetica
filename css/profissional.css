@@ -65,88 +65,190 @@
   font-weight: 500;
 }
 
-.agenda {
-  width: 90%;
-  margin: 40px auto;
+/* ========================================
+   AGENDA PROFISSIONAL
+======================================== */
+.agenda-profissional {
+  width: 95%;
+  margin: 30px auto;
+  position: relative;
 }
 
-/* ESCONDE OS RADIOS */
+/* ESCONDE RADIOS */
 input[type="radio"] {
   display: none;
 }
 
-/* ABAS */
+/* ===== TABS ===== */
+
 .tabs {
   display: flex;
-  gap: 10px;
+  gap: 18px;
+  position: relative;
+  z-index: 2;
+  margin-left: 30px;
 }
 
-.tab {
-  padding: 12px 25px;
-  background: #b7d0d0;
-  border-radius: 12px 12px 0 0;
+.tab1 {
+  padding: 18px 40px;
+  border-radius: 22px 22px 0 0;
+  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* ABA ATIVA */
+.tab2 {
+  padding: 18px 40px;
+  border-radius: 22px 22px 0 0;
+  background: color-mix(in srgb, var(--cor-header) 70%, transparent);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* TAB ATIVA */
+
 #tab-agenda:checked ~ .tabs label[for="tab-agenda"],
 #tab-especialidades:checked ~ .tabs label[for="tab-especialidades"] {
-  background: #e3f1f1;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-/* CONTEÚDO */
-.content {
-  background: #e3f1f1;
-  padding: 20px;
-  border-radius: 0 12px 12px 12px;
+/* ===== CONTAINER ===== */
+
+.content-profissional {
+  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
+
+  border-radius: 28px;
+
+  padding: 35px;
 }
 
-/* ESCONDE TUDO */
+/* ESCONDE */
+
 .tab-content {
   display: none;
 }
 
-/* MOSTRA O ATIVO */
-#tab-agenda:checked ~ .content .agenda-content {
+/* MOSTRA */
+
+#tab-agenda:checked ~ .content-profissional .agenda-content {
   display: block;
 }
 
-#tab-especialidades:checked ~ .content .especialidades-content {
+#tab-especialidades:checked ~ .content-profissional .especialidades-content {
   display: block;
+
+  background: color-mix(in srgb, var(--cor-header) 70%, transparent);
 }
 
-/* CALENDÁRIO */
+/* ===== CALENDÁRIO ===== */
+
 .calendar {
   width: 100%;
   border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 24px;
 }
 
-.calendar th,
+/* CABEÇALHO */
+
+.calendar th {
+  height: 70px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  background: color-mix(in srgb, var(--cor-segundaria) 0%, transparent);
+
+  border: 1px solid rgba(90, 130, 130, 0.18);
+}
+
+/* CELULAS */
+
 .calendar td {
-  border: 1px solid #9dbcbc;
-  padding: 10px;
-  height: 80px;
+  height: 120px;
+
+  padding: 14px;
+
   vertical-align: top;
+
+  color: #2e5f68;
+  font-size: 1.1rem;
+
+  background: color-mix(in srgb, var(--cor-header) 60%, transparent);
+
+  border: 1px solid color-mix(in srgb, var(--cor-placeholder) 30%, transparent);
+
+  position: relative;
 }
 
-/* TAREFAS */
+/* CANTOS */
+
+.calendar thead tr th:first-child {
+  border-top-left-radius: 24px;
+}
+
+.calendar thead tr th:last-child {
+  border-top-right-radius: 24px;
+}
+
+.calendar tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 24px;
+}
+
+.calendar tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 24px;
+}
+
+/* ===== TASKS ===== */
+
 .task {
-  height: 10px;
-  background: #4f7c7c;
-  border-radius: 5px;
-  margin-top: 5px;
+  width: 85%;
+  height: 14px;
+
+  background: #49767a;
+
+  border-radius: 999px;
+
+  margin-top: 12px;
+
+  opacity: 0.95;
 }
 
-/* CARDS */
+/* ===== ESPECIALIDADES ===== */
+
 .cards-especialidades {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 22px;
 }
 
 .card-especialidade {
-  background: #9dbcbc;
-  padding: 15px;
-  border-radius: 12px;
+  background: rgba(120, 175, 175, 0.45);
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  min-height: 130px;
+
+  color: #2e5f68;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.04);
+
+  transition: 0.25s;
+}
+
+.card-especialidade:hover {
+  transform: translateY(-4px);
 }
