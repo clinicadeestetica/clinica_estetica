@@ -81,7 +81,7 @@ input[type="radio"] {
 
 /* ===== TABS ===== */
 
-.tabs {
+.agenda-profissional__tabs {
   display: flex;
   gap: 18px;
   position: relative;
@@ -89,20 +89,10 @@ input[type="radio"] {
   margin-left: 30px;
 }
 
-.tab1 {
+.agenda-profissional__tab {
   padding: 18px 40px;
   border-radius: 22px 22px 0 0;
-  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.tab2 {
-  padding: 18px 40px;
-  border-radius: 22px 22px 0 0;
-  background: color-mix(in srgb, var(--cor-header) 70%, transparent);
+  background: color-mix(in srgb, var(--cor-header) 50%, transparent);
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -111,8 +101,11 @@ input[type="radio"] {
 
 /* TAB ATIVA */
 
-#tab-agenda:checked ~ .tabs label[for="tab-agenda"],
-#tab-especialidades:checked ~ .tabs label[for="tab-especialidades"] {
+#tab-agenda:checked ~ .agenda-profissional__tabs label[for="tab-agenda"],
+#tab-especialidades:checked
+  ~ .agenda-profissional__tabs
+  label[for="tab-especialidades"] {
+  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
   font-weight: 700;
 }
 
@@ -140,8 +133,6 @@ input[type="radio"] {
 
 #tab-especialidades:checked ~ .content-profissional .especialidades-content {
   display: block;
-
-  background: color-mix(in srgb, var(--cor-header) 70%, transparent);
 }
 
 /* ===== CALENDÁRIO ===== */
@@ -174,8 +165,6 @@ input[type="radio"] {
   padding: 14px;
 
   vertical-align: top;
-
-  color: #2e5f68;
   font-size: 1.1rem;
 
   background: color-mix(in srgb, var(--cor-header) 60%, transparent);
@@ -220,35 +209,48 @@ input[type="radio"] {
 
 /* ===== ESPECIALIDADES ===== */
 
-.cards-especialidades {
+.especialidades {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  gap: 28px;
 }
 
-.card-especialidade {
-  background: rgba(120, 175, 175, 0.45);
-
-  border-radius: 24px;
-
-  padding: 24px;
-
-  min-height: 130px;
-
-  color: #2e5f68;
-
-  font-size: 1.2rem;
-  font-weight: 700;
-
-  backdrop-filter: blur(10px);
-
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
-    0 8px 20px rgba(0, 0, 0, 0.04);
-
-  transition: 0.25s;
+.especialidades__card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.card-especialidade:hover {
-  transform: translateY(-4px);
+.especialidades__circle {
+  width: 95px;
+  min-width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+  background: var(--cor-header);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.especialidades__svg {
+  width: 40px;
+  height: 40px;
+}
+
+.especialidades__content {
+  background: var(--cor-header);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.especialidades__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.especialidades__description {
+  font-size: 14px;
+  line-height: 1.6;
 }

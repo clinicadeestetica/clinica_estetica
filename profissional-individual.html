@@ -376,9 +376,13 @@
         <input type="radio" name="tab" id="tab-especialidades" />
 
         <!-- BOTÕES -->
-        <div class="tabs">
-          <label for="tab-agenda" class="tab1">Agenda</label>
-          <label for="tab-especialidades" class="tab2">Especialidades</label>
+        <div class="agenda-profissional__tabs">
+          <label for="tab-agenda" class="agenda-profissional__tab"
+            >Agenda</label
+          >
+          <label for="tab-especialidades" class="agenda-profissional__tab"
+            >Especialidades</label
+          >
         </div>
 
         <!-- CONTEÚDO -->
@@ -469,13 +473,62 @@
 
           <!-- ESPECIALIDADES -->
           <div class="tab-content especialidades-content">
-            <div class="cards-especialidades">
-              <div class="card-especialidade">Botox</div>
-              <div class="card-especialidade">Limpeza de pele</div>
-              <div class="card-especialidade">Hidratação facial</div>
-              <div class="card-especialidade">Peeling químico</div>
-              <div class="card-especialidade">Skincare personalizado</div>
-              <div class="card-especialidade">Terapias faciais</div>
+            <div class="especialidades">
+              <div class="especialidades__card">
+                <div class="especialidades__circle">
+                  <svg
+                    class="especialidades__svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="7"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                    <path
+                      d="M20 20L17 17"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </div>
+
+                <div class="especialidades__content">
+                  <h3 class="especialidades__title">Botox</h3>
+
+                  <p class="especialidades__description">
+                    Procedimento estético para suavização de linhas de
+                    expressão.
+                  </p>
+                </div>
+              </div>
+
+              <div class="especialidades__card">
+                <div class="especialidades__circle">
+                  <svg
+                    class="especialidades__svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 3C12 3 7 9 7 13a5 5 0 0010 0c0-4-5-10-5-10z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </div>
+
+                <div class="especialidades__content">
+                  <h3 class="especialidades__title">Hidratação Facial</h3>
+
+                  <p class="especialidades__description">
+                    Tratamento intensivo para revitalização e brilho da pele.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
