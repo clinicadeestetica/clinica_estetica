@@ -89,7 +89,7 @@ hidra-face/
 │   │   ├── financeiro.css
 │   │   ├── profissionais.css
 │   │   ├── estoque.css
-│   │   ├── global.css
+│   │   ├── global.css   # Resets, variáveis CSS, tipografia padrão
 │   │   ├── vendas.css
 │   │   └── relatorios.css
 │   │
