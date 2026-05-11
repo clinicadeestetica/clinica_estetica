@@ -1,3 +1,4 @@
+/* titulo principal */
 .titulo {
     margin-top: 50px;
     display: flex;
@@ -6,6 +7,7 @@
     text-align: center;
 }
 
+/* ajustes do tamanho dos textos */
 .titulo h1 {
     font-size: 48px;
     color: var(--cor-placeholder);
@@ -25,7 +27,8 @@
     margin-top: 6px;
 }
 
-.content-agendamento{
+/* content principal do agendamento */
+.content_agendamento{
     background-color: var(--cor-conteiner);
     padding: 25px;
     margin-top: 25px;
@@ -42,26 +45,28 @@
     margin-right: auto;
 }
 
-.content-agendamento > h4 {
+.content_agendamento > h4 {
     color: var(--font-cor-primaria);
     font-weight: var(--font-weight-bold);
 }
 
-.form-group {
+/* div de alinhamento de inputs */
+.form_group {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
 }
 
-.icon-group {
+/* div para alinhamento dos icones */
+.icon_group {
     position: relative;
     width: 493px;
     margin-top: 9px; 
 }
 
 /* input */
-.icon-group input {
+.icon_group input {
     width: 100%;
     max-width: 493px;
     height: 57px;
@@ -73,7 +78,7 @@
 }
 
 /* ícone */
-.icon-group .icon {
+.icon_group .icon {
     position: absolute;
     left: 15px;
     top: 50%; /* centraliza com o input */
@@ -81,14 +86,14 @@
 }
 
 /* Placeholder */
-.form-group input::placeholder {
+.form_group input::placeholder {
     font-family: var(--font-family);
     color: var(--cor-placeholder);
     opacity: 0.5;
 }
 
 /* Input para seleção de serviços */
-.input-select {
+.input_select {
     width: 100%;
     max-width: 493px;
     height: 57px;
@@ -100,7 +105,7 @@
     cursor: pointer;
 }
 
-.campo-select {
+.campo_select {
     width: 100%;
     max-width: 493px;
     height: 57px;
@@ -114,7 +119,7 @@
 }
 
 /* ícone da seta */
-.icon-seta {
+.icon_seta {
     position: absolute;
     right: 15px;
     top: 55%;
@@ -132,7 +137,7 @@
 }
 
 /* select */
-.campo-select select {
+.campo_select select {
     width: 100%;
     max-width: 493px;
     height: 57px;
@@ -148,7 +153,7 @@
 }
 
 /* input data e horario igual select */
-.campo-select input {
+.campo_select input {
     width: 100%;
     max-width: 493px;
     height: 57px;
@@ -164,8 +169,8 @@
 }
 
 /* remove estilo padrão de date e time */
-.campo-select input[type="date"],
-.campo-select input[type="time"] {
+.campo_select input[type="date"],
+.campo_select input[type="time"] {
     appearance: none;
     -webkit-appearance: none;
 }

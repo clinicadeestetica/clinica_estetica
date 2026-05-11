@@ -1,0 +1,140 @@
+/* main principal */
+.login_main{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 70px; /* espaço entre imagem e formulário */
+    min-height: 100vh; /* minimo para ocupar toda a altura da tela */
+    padding: 20px;
+}
+
+/* imagem ao lado do formulário */
+.login_main img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* título do formulário */
+.title_login{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+/* conteúdo do formulário */
+.content_login{
+    background-color: var(--cor-conteiner-cadastro);
+    padding: 25px;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 500px;
+    max-width: 650px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-direction: column;
+}
+
+.content_login span{
+    font-size: var(--font-size-xs);
+}
+
+/* formulário */
+.form_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* div de alinhamento de icones e inputs */
+.group_login {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 15px; 
+}
+
+/* input */
+.group_login input {
+    width: 100%;
+    max-width: 450px;
+    height: 57px;
+    padding: 15px 10px 15px 70px;
+    border-radius: 8px;
+    border: 2px solid #E5E4E9;
+    outline: none;
+    background: var(--font-cor-segundaria);
+}
+
+/* ícone */
+.group_login .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%; /* centraliza com o input */
+    transform: translateY(-50%); /* fica centralizado verticalmente */
+}
+
+/* Placeholder */
+.form_login input::placeholder {
+    font-family: var(--font-family);
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+}
+
+
+/* Botao de entrar */
+.btn_conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 55px;
+    border-radius: 11px;
+    background: linear-gradient(90deg, #3E5F5C, #6FAF9D);
+    color: var(--font-cor-segundaria);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    margin-top: 25px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+}
+
+.btn_conta:hover {
+    background: var(--cor-button-hover);
+    transition: 0.7s;
+}
+
+/* linha a baix0 do botao */
+.content_login hr {
+    margin-top: 28px;
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-top: 1px solid #ECECEC;
+    align-self: center; /* centraliza no flex */
+}
+
+/* container do login_redirect */
+.login_redirect{
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* link de login */
+.login_redirect a{
+    font-size: var(--font-size-body);
+    color: var(--font-cor-terciaria);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
+}
