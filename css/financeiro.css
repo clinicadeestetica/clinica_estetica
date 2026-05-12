@@ -1,0 +1,357 @@
+main{
+    margin:70px;
+}
+.main_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 120px;
+}
+.main_cards--1 > svg{
+    margin-top: 19px;
+    margin-left: 20px;
+   
+}
+.main_cards--2 > svg{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.main_cards--3 > svg{
+    margin-top: 22px;
+    margin-left: 10px;
+}
+.main_cards--4 > svg{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.main_cards--1, .main_cards--2,.main_cards--3, .main_cards--4{
+    background-color: var(--cor-header);
+    max-width: 400px;
+    min-height: 162px;
+    border-radius: 20px
+}
+
+.card_texto_botao--1  , .card_texto_botao--2 , .card_texto_botao--3  , .card_texto_botao--4 {
+  text-align: center;
+ margin-top: 20px;
+ 
+  
+}
+.card_texto_botao--1 > h1, .card_texto_botao--2 > h1, .card_texto_botao--3 > h1, .card_texto_botao--4 > h1{
+    margin-bottom: -15px;
+}
+
+
+.card_texto_botao--1 > a>.bnt_cards , .card_texto_botao--4 > a>.bnt_cards, .card_texto_botao--2 > a>.bnt_cards , .card_texto_botao--3 > a>.bnt_cards{
+    margin-top: 20px;
+   
+}
+.main_cards--1, .main_cards--2 , .main_cards--3 ,.main_cards--4{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    
+}
+
+.bnt_cards{
+    border-radius:8px;
+    height: 40px;
+    width: 134px;
+    background-color: #85BDB0;
+    color: var(--font-cor-primaria);
+   
+}
+
+
+.main_formas_pagamento > h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.formas_pagamento_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.formas_pagamento_cards--1, .formas_pagamento_cards--2, .formas_pagamento_cards--3{
+    background-color: #85BDB0;   
+    width: 234px;
+    height: 40px;
+    border-radius: 8px;
+    
+}
+.formas_pagamento_cards--1 > h3, .formas_pagamento_cards--2 > h3, .formas_pagamento_cards--3 > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.table_th{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+
+
+.main_tabela{
+   
+    margin-top: 90px;
+    width: 100%;
+    background-color: rgba(191, 213, 211, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tabela_barra_pesquisa {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 10px;
+    background-color: rgba(133, 189, 176, 0.5);
+    margin-top: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+}
+.tabela_barra_pesquisa > input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: auto;
+    
+}
+.tabela_barra_pesquisa > span> svg{
+    display: flex;
+    align-items: center;
+    
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(19, 18, 18, 0.315);
+    width: 102.1%;
+    height: 2px;
+    margin-left: -10px;
+}
+
+
+.input_selecao {
+    width: 100%;
+    max-width: 300px;
+    height: 47px;
+    padding: 15px 10px 15px 0px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    appearance: none; /* remove icone padrão */
+    outline: none;
+    cursor: pointer;
+}
+
+.tabela_campo_selecao {
+    width: 100%;
+    max-width: 295px;
+    height: 47px;
+    background-color: rgba(133, 189, 176, 0.5);    
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    border: 1px solid #ccc;
+    margin-left: 0px;
+}
+
+/* ícone da seta */
+.icon_seta {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none; /* para que o clique no ícone e ative o select */
+}
+
+/* textos a esquerda */
+.label_financeiro_selecao {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 20px;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+}
+
+/* select */
+.tabela_campo_selecao select {
+    width: 100%;
+    max-width: 295px;
+    height: 47px;
+    padding-left: 90px;
+    padding-right: 4px;
+    border: none;
+    background: transparent;
+    appearance: none;
+    outline: none;
+    color: var(--cor-placeholder);
+    opacity: 0.5;
+    font-family: var(--font-family);
+    margin-left: 0px;
+}
+
+/* remove estilo padrão de date e time */
+.tabela_campo_selecao input[type="date"] {
+    width: 100%;
+    width: 295px;
+    height: 47px;       
+     padding-left: 70px;
+    padding-right: 4px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: var(--font-family);
+    color: transparent; /* esconde o texto da data selecionada */
+    opacity: 0.5;
+    margin-left: 0px;
+}
+
+/* remove ícones padrão do navegador */
+/* icone de calendario e relogio */
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 221px;
+    height: 47px;
+    cursor: pointer;
+}
+
+/* usuario seleciona a data e aparece selecionado */
+input[type="date"]:focus, /* usuario clica no campo e volta ao normal */
+input[type="date"]:valid { /* mantem data selecionada mesmo sem selecionar depois */
+    color: var(--cor-placeholder);
+    
+}
+
+.main_tabela_topo{
+    display: flex;
+    
+}
+.main_tabela_topo >.main_tabela_topo--ver_mais{
+    justify-content: end;
+    align-items: end;
+    margin-left: auto;
+    margin-top: -2px;
+
+}
+.bnt_ver_mais{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--font-cor-primaria);
+    height: 10px;
+}
+
+.bnt_ver_mais:hover{
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+}
+.main_tabela_topo > svg {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main_tabela{
+    height: 100%;
+}
+
+.main_tabela_selecao{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.main_tabela--linha_escura{
+    display: flex;
+    width: 102.1%;
+    min-height: 68px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: rgba(133, 189, 176, 0.5);
+    font-weight: var(--font-weight-semibold);
+}
+
+.linha_escura--p1 , .linha_escura--p2 , .linha_escura--p3 , .linha_escura--p4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--font-weight-bold);
+}
+.linha_escura--p1 {
+    margin-left: 10%;
+}
+.linha_escura--p2 {
+    margin-left: 14%;
+}
+.linha_escura--p3 {
+    margin-left: 10%;
+}
+.linha_escura--p4 {
+    margin-left: 12.5%;
+}
+
+.main_tabela_conteudo-1, .main_tabela_conteudo-2{
+    display: flex; 
+   min-height: 68px;
+}
+
+.main_tabela_conteudo-1 > img{
+    margin-top: 18px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+  height: 50px;
+  width: 50px;
+}
+.main_tabela_conteudo-2>img{
+     margin-top: 18px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+    height: 50px;
+   width: 50px;
+}
+.main_tabela_conteudo-1 > p, .main_tabela_conteudo-2 > p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+
+.main_tabela_conteudo-1--p1,.main_tabela_conteudo-1--p2 , .main_tabela_conteudo-1--p3 , .main_tabela_conteudo-1--p4{
+    display: flex;
+   width: 155px;
+}
+.main_tabela_conteudo-2--p1,.main_tabela_conteudo-2--p3,.main_tabela_conteudo-2--p2 ,  .main_tabela_conteudo-2--p4, .main_tabela_conteudo-2--botao {
+    display: flex;
+    
+   width: 155px;
+}
+
+ 
+.bnt_tabela{
+    border-radius:8px;
+    height: 40px;
+    width: 200px;
+    background-color: #85BDB0;
+    color: var(--font-cor-primaria);
+   
+}
+
