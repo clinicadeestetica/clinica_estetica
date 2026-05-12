@@ -10,7 +10,8 @@
     <div class="sidebar">
       <!-- icone de x -->
       <div class="toggle_fechar">
-        <svg width="23"
+        <svg
+          width="23"
           height="23"
           viewBox="0 0 23 23"
           fill="none"
@@ -370,118 +371,217 @@
         <img src="assets/perfil.png" alt="Perfil" />
       </header>
       <main>
-        <section class="professionals">
-          <h2 class="professionals__title">Nossos Clientes</h2>
+        <main class="paciente">
+          <section class="paciente__perfil">
+            <!-- TOPO -->
+            <div class="paciente__topo">
+              <div class="paciente__info">
+                <img
+                  src="./assets/perfil.png"
+                  alt="Foto da paciente"
+                  class="paciente__foto"
+                />
 
-          <table class="professionals__table">
-            <thead class="professionals__head">
-              <tr class="professionals__row">
-                <th class="professionals__header1">Cliente</th>
-                <th class="professionals__header2">Telefone</th>
-              </tr>
-            </thead>
+                <div class="paciente__dados">
+                  <h1 class="paciente__nome">Larinha Queiroz</h1>
 
-            <tbody class="professionals__body">
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/bruna_souza.png"
-                    alt="Bruna Souza"
+                  <address class="paciente__contato">
+                    <a href="tel:+5511923145678" class="paciente__telefone"
+                      >(11) 92314-5678</a
+                    >
+
+                    <a href="mailto:larinha_pequenininha@gmail.com" class="paciente__email">
+                      larinha_pequenininha@gmail.com
+                    </a>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTEÚDO -->
+            <section class="paciente__conteudo">
+              <!-- HISTÓRICO -->
+              <section class="paciente__historico">
+                <div class="paciente__historico-topo">
+                  <h2 class="paciente__titulo">Histórico de Atendimento</h2>
+                </div>
+
+                <!-- FILTROS -->
+                <form class="paciente__filtros">
+                  <input
+                    type="text"
+                    placeholder="Atendimento"
+                    class="paciente__input"
                   />
-                  <span class="professionals__name">
-                    <a href="./cliente-individual.html">Mariana Alves</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(19) 99821-4736</td>
-              </tr>
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/vitor_guilherme.png"
-                    alt="Vitor Guilherme"
-                  />
-                  <span class="professionals__name">
-                    <a href="">Camila Ferreira</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(11) 99754-1823</td>
-              </tr>
+                  <input type="date" class="paciente__input" />
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/felipe_camargo.png"
-                    alt="Felipe Camargo"
-                  />
-                  <span class="professionals__name">
-                    <a href="">Juliana Costa</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(31) 99612-8457</td>
-              </tr>
+                  <select class="paciente__select">
+                    <option>Procedural</option>
+                  </select>
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/Paulo_silva.png"
-                    alt="Paulo Silva"
-                  />
-                  <span class="professionals__name">
-                    <a href="">Beatriz Martins</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(21) 99873-5614</td>
-              </tr>
+                  <select class="paciente__select">
+                    <option>Profissional</option>
+                  </select>
+                </form>
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/vitoria_almeida.png"
-                    alt="Vitória Almeida"
-                  />
-                  <span class="professionals__name">
-                    <a href="">Fernanda Rocha</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(41) 99711-2948</td>
-              </tr>
+                <!-- TABELA -->
+                <table class="paciente__tabela">
+                  <thead>
+                    <tr>
+                      <th>Data</th>
+                      <th>Procedural</th>
+                      <th>Profissional</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
-                  <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/talita_figueira.png"
-                    alt="Talita Figueira"
-                  />
-                  <span class="professionals__name">
-                    <a href="">Larissa Gomes</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(51) 99645-7732</td>
-              </tr>
+                  <tbody>
+                    <tr>
+                      <td>24 Abr, 2026</td>
+                      <td>Limpeza de Pele</td>
+                      <td>Vitória Almeida</td>
 
-              <tr class="professionals__row">
-                <td class="professionals__cell professionals__cell--user">
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>15 Abr, 2026</td>
+                      <td>Drenagem Linfática</td>
+                      <td>Cristiano Pinto</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>30 Mai, 2026</td>
+                      <td>Peeling Químico</td>
+                      <td>Paulo Silva</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>10 Mai, 2026</td>
+                      <td>Botox</td>
+                      <td>Vitor Guilherme</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--pendente"
+                        >
+                          Pendente
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <!-- ANAMNESE -->
+              <aside class="paciente__anamnese">
+                <div class="paciente__anamnese-topo">
+                  <h2 class="paciente__titulo">Anamnese</h2>
+                </div>
+
+                <div class="paciente__anamnese-info">
+                  <div class="paciente__anamnese-item">
+                    <span>Idade</span>
+                    <strong>36 anos</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Altura</span>
+                    <strong>1,72m</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Peso</span>
+                    <strong>60kg</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Alergias</span>
+                    <strong>Penicilina</strong>
+                  </div>
+                </div>
+
+                <!-- PROCEDIMENTOS -->
+                <section class="paciente__procedimentos">
+                  <h3 class="paciente__subtitulo">
+                    Histórico de Procedimentos
+                  </h3>
+
+                  <ul class="paciente__lista">
+                    <li class="paciente__lista-item">
+                      <span>30 Mar, 2026</span>
+                      <span>César Augusto</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>20 Mar, 2026</span>
+                      <span>Renato Carvalho</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>10 Fev, 2026</span>
+                      <span>Aline Barbosa</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>15 Fev, 2026</span>
+                      <span>Karina Ribeiro</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>23 Jan, 2026</span>
+                      <span>Diego Alves</span>
+                    </li>
+                  </ul>
+
+                  <div class="paciente__footer">
+                    <a href="#" class="paciente__link"> Ver Mais </a>
+                  </div>
+                </section>
+              </aside>
+            </section>
+
+            <!-- FOTOS -->
+            <section class="paciente__fotos">
+              <div class="paciente__fotos-topo">
+                <h2 class="paciente__titulo">Fotos de Antes e Depois</h2>
+              </div>
+
+              <div class="paciente__galeria">
+                <figure class="paciente__imagem-box">
                   <img
-                    class="professionals__avatar"
-                    src="./assets/profissionais/cristiano_pinto.png"
-                    alt="Cristiano Pinto"
+                    src="./assets/antes_depois.png"
+                    alt="Antes e depois"
+                    class="paciente__imagem"
                   />
-                  <span class="professionals__name">
-                    <a href="">Patrícia Oliveira</a></span
-                  >
-                </td>
-                <td class="professionals__cell">(27) 99802-6145</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+                </figure>
+              </div>
+            </section>
+          </section>
+        </main>
       </main>
     </div>
 
