@@ -323,9 +323,29 @@ h1{
   font-weight:500;
 }
 
-.arrow{
-  margin-top: 10px;
+/* TEXTO */
+.label_estoque_selecao{
+  font-size:18px;
+  font-weight:500;
+  color:#3b6870;
+  white-space:nowrap;
 }
+
+/* SELECT */
+.select_estoque{
+  width:180px;
+  height:34px;
+  border:none;
+  outline:none;
+  border-radius:6px;
+  background:#bfe0d8;
+  color:#3b6870;
+  font-size:15px;
+  font-weight:500;
+  padding:0 10px;
+  cursor:pointer;
+}
+
 
 table{
   width:100%;
