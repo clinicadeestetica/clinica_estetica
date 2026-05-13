@@ -1,0 +1,354 @@
+.paciente {
+  width: 100%;
+  padding: 2rem;
+}
+
+.paciente__perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* TOPO */
+
+.paciente__topo {
+  width: 100%;
+}
+
+.paciente__info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.paciente__foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.paciente__dados {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paciente__nome {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.paciente__contato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-style: normal;
+}
+
+.paciente__telefone,
+.paciente__email {
+  font-size: 0.95rem;
+}
+
+/* CONTEÚDO */
+
+.paciente__conteudo {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* HISTÓRICO */
+
+.paciente__historico {
+  flex: 1;
+  background: color-mix(in srgb, var(--cor-header) 50%, transparent);
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.paciente__historico-topo {
+  margin-bottom: 1rem;
+}
+
+.paciente__titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* FILTROS */
+.filtros-clientes {
+  width: 100%;
+}
+
+.filtros-clientes__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filtros-clientes__busca {
+  display: flex;
+  align-items: center;
+  height: 47px;
+  border-radius: 0.75rem;
+  background-color: color-mix(in srgb, var(--cor-primaria) 50%, transparent);
+}
+
+.filtros-clientes__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.875rem;
+  margin-left: 20px;
+}
+
+.filtros-clientes__botao {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 0px;
+  box-shadow: none;
+  width: 38px;
+
+}
+
+.filtros-clientes__botao:hover{
+    background-color: transparent;
+}
+
+.filtros-clientes__selecoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.filtros-clientes__campo {
+  width: 100%;
+}
+
+.filtros-clientes__select {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  outline: none;
+  background-color: color-mix(in srgb, var(--cor-primaria) 50%, transparent);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.filtros-clientes__label--oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* TABELA */
+
+.paciente__tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+
+.paciente__tabela thead {
+  background: color-mix(in srgb, var(--cor-primaria) 50%, transparent);
+}
+
+.paciente__tabela th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--font-cor-primaria);
+}
+
+.paciente__tabela td {
+  padding: 1rem;
+  border-bottom: 1px solid #d7e8e5;
+  color: var(--font-cor-primaria);
+  font-size: 0.9rem;
+}
+
+/* STATUS */
+
+.paciente__status {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+.paciente__status--confirmado {
+  background: color-mix(in srgb, var(--cor-primaria) 50%, transparent);
+}
+
+.paciente__status--confirmado:hover {
+  background: var(--cor-primaria);
+}
+
+.paciente__status--pendente {
+  background: color-mix(in srgb, var(--cor-alerta) 50%, transparent);
+}
+
+.paciente__status--pendente:hover {
+  background: var(--cor-alerta);
+}
+
+/* ANAMNESE */
+
+.paciente__anamnese {
+  width: 320px;
+  background:  color-mix(in srgb, var(--cor-header) 50%, transparent);
+  
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+/* TOPO */
+
+.paciente__anamnese-topo {
+  background:  color-mix(in srgb, var(--cor-primaria) 50%, transparent);
+  padding: 1rem 1.5rem;
+}
+
+.paciente__titulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #456562;
+}
+
+/* INFORMAÇÕES */
+
+.paciente__anamnese-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.paciente__anamnese-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paciente__alergia {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 10px;
+  margin: 10px auto ;
+  margin-left: 90px;
+  border-color: 2px solid black;
+}
+
+.paciente__alergia--remedio{
+    background-color: var(--cor-primaria);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.paciente__anamnese-item span {
+  font-size: 1rem;
+  color: #456562;
+}
+
+.paciente__anamnese-item strong {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #456562;
+}
+
+
+
+.paciente__tag {
+  background: #9fd0c8;
+  color: #456562;
+  padding: 0.4rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* PROCEDIMENTOS */
+
+.paciente__procedimentos {
+  border-top: 1px solid rgba(69, 101, 98, 0.2);
+}
+
+.paciente__subtitulo {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #456562;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(69, 101, 98, 0.15);
+}
+
+.paciente__lista {
+  list-style: none;
+}
+
+.paciente__lista-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  color: #456562;
+  border-bottom: 1px solid rgba(69, 101, 98, 0.1);
+}
+
+/* FOOTER */
+
+.paciente__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.2rem;
+}
+
+.paciente__link {
+  text-decoration: none;
+  color: #456562;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* FOTOS */
+
+.paciente__fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paciente__galeria {
+  display: flex;
+  gap: 1rem;
+}
+
+.paciente__imagem-box {
+  width: 260px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.paciente__imagem {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
