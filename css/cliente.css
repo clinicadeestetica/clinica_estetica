@@ -37,6 +37,7 @@
 .paciente__nome {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #2d5d5a;
 }
 
 .paciente__contato {
@@ -49,6 +50,7 @@
 .paciente__telefone,
 .paciente__email {
   font-size: 0.95rem;
+  color: #5c7774;
 }
 
 /* CONTEÚDO */
@@ -58,6 +60,9 @@
   grid-template-columns: 1fr 320px;
   gap: 2rem;
   align-items: start;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 /* HISTÓRICO */
@@ -65,6 +70,7 @@
 .paciente__historico {
   flex: 1;
   background: color-mix(in srgb, var(--cor-header) 50%, transparent);
+  background: color-mix(in srgb, var(--cor-segundaria) 37%, transparent);
   border-radius: 24px;
   padding: 1.5rem;
 }
@@ -147,6 +153,28 @@
   height: 1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
+  color: #2d5d5a;
+}
+
+/* FILTROS */
+
+.paciente__filtros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.paciente__input,
+.paciente__select {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  padding: 0 1rem;
+  background: #d8ebe7;
+  color: #2d5d5a;
+  outline: none;
 }
 
 /* TABELA */
@@ -162,17 +190,23 @@
   background: color-mix(in srgb, var(--cor-primaria) 50%, transparent);
 }
 
+.paciente__tabela thead {
+  background: #b8d7d2;
+}
+
 .paciente__tabela th {
   padding: 1rem;
   text-align: left;
   font-size: 0.9rem;
   color: var(--font-cor-primaria);
+  color: #2d5d5a;
 }
 
 .paciente__tabela td {
   padding: 1rem;
   border-bottom: 1px solid #d7e8e5;
   color: var(--font-cor-primaria);
+  color: #456562;
   font-size: 0.9rem;
 }
 
@@ -206,6 +240,16 @@
 
 .paciente__status--pendente:hover {
   background: var(--cor-alerta);
+}
+
+.paciente__status--confirmado {
+  background: #b8efe1;
+  color: #28745f;
+}
+
+.paciente__status--pendente {
+  background: #f6e49a;
+  color: #8b6b00;
 }
 
 /* ANAMNESE */
@@ -283,6 +327,38 @@
   padding: 0.4rem 1.5rem;
   border-radius: 999px;
   font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.paciente__anamnese-topo {
+  margin-bottom: 1.5rem;
+}
+
+.paciente__anamnese-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.paciente__anamnese-item {
+  background: #d8ebe7;
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.paciente__anamnese-item span {
+  font-size: 0.8rem;
+  color: #5c7774;
+}
+
+.paciente__anamnese-item strong {
+  color: #2d5d5a;
 }
 
 /* PROCEDIMENTOS */
@@ -298,10 +374,20 @@
   color: #456562;
   font-weight: 500;
   border-bottom: 1px solid rgba(69, 101, 98, 0.15);
+  margin-top: 2rem;
+}
+
+.paciente__subtitulo {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #2d5d5a;
 }
 
 .paciente__lista {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .paciente__lista-item {
@@ -319,6 +405,14 @@
   display: flex;
   justify-content: flex-end;
   padding: 1rem 1.2rem;
+  font-size: 0.9rem;
+  color: #456562;
+}
+
+.paciente__footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .paciente__link {
@@ -329,6 +423,10 @@
   align-items: center;
   gap: 0.5rem;
 }
+  color: #2d5d5a;
+  font-weight: 600;
+}
+
 /* FOTOS */
 
 .paciente__fotos {
@@ -353,3 +451,5 @@
   display: block;
   object-fit: cover;
 }
+}
+

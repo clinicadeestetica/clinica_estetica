@@ -691,6 +691,217 @@
             </section>
 
         </section>
+        <main class="paciente">
+          <section class="paciente__perfil">
+            <!-- TOPO -->
+            <div class="paciente__topo">
+              <div class="paciente__info">
+                <img
+                  src="./assets/perfil.png"
+                  alt="Foto da paciente"
+                  class="paciente__foto"
+                />
+
+                <div class="paciente__dados">
+                  <h1 class="paciente__nome">Larinha Queiroz</h1>
+
+                  <address class="paciente__contato">
+                    <a href="tel:+5511923145678" class="paciente__telefone"
+                      >(11) 92314-5678</a
+                    >
+
+                    <a href="mailto:larinha_pequenininha@gmail.com" class="paciente__email">
+                      larinha_pequenininha@gmail.com
+                    </a>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTEÚDO -->
+            <section class="paciente__conteudo">
+              <!-- HISTÓRICO -->
+              <section class="paciente__historico">
+                <div class="paciente__historico-topo">
+                  <h2 class="paciente__titulo">Histórico de Atendimento</h2>
+                </div>
+
+                <!-- FILTROS -->
+                <form class="paciente__filtros">
+                  <input
+                    type="text"
+                    placeholder="Atendimento"
+                    class="paciente__input"
+                  />
+
+                  <input type="date" class="paciente__input" />
+
+                  <select class="paciente__select">
+                    <option>Procedural</option>
+                  </select>
+
+                  <select class="paciente__select">
+                    <option>Profissional</option>
+                  </select>
+                </form>
+
+                <!-- TABELA -->
+                <table class="paciente__tabela">
+                  <thead>
+                    <tr>
+                      <th>Data</th>
+                      <th>Procedural</th>
+                      <th>Profissional</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>24 Abr, 2026</td>
+                      <td>Limpeza de Pele</td>
+                      <td>Vitória Almeida</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>15 Abr, 2026</td>
+                      <td>Drenagem Linfática</td>
+                      <td>Cristiano Pinto</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>30 Mai, 2026</td>
+                      <td>Peeling Químico</td>
+                      <td>Paulo Silva</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--confirmado"
+                        >
+                          A Confirmar
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>10 Mai, 2026</td>
+                      <td>Botox</td>
+                      <td>Vitor Guilherme</td>
+
+                      <td>
+                        <span
+                          class="paciente__status paciente__status--pendente"
+                        >
+                          Pendente
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <!-- ANAMNESE -->
+              <aside class="paciente__anamnese">
+                <div class="paciente__anamnese-topo">
+                  <h2 class="paciente__titulo">Anamnese</h2>
+                </div>
+
+                <div class="paciente__anamnese-info">
+                  <div class="paciente__anamnese-item">
+                    <span>Idade</span>
+                    <strong>36 anos</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Altura</span>
+                    <strong>1,72m</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Peso</span>
+                    <strong>60kg</strong>
+                  </div>
+
+                  <div class="paciente__anamnese-item">
+                    <span>Alergias</span>
+                    <strong>Penicilina</strong>
+                  </div>
+                </div>
+
+                <!-- PROCEDIMENTOS -->
+                <section class="paciente__procedimentos">
+                  <h3 class="paciente__subtitulo">
+                    Histórico de Procedimentos
+                  </h3>
+
+                  <ul class="paciente__lista">
+                    <li class="paciente__lista-item">
+                      <span>30 Mar, 2026</span>
+                      <span>César Augusto</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>20 Mar, 2026</span>
+                      <span>Renato Carvalho</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>10 Fev, 2026</span>
+                      <span>Aline Barbosa</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>15 Fev, 2026</span>
+                      <span>Karina Ribeiro</span>
+                    </li>
+
+                    <li class="paciente__lista-item">
+                      <span>23 Jan, 2026</span>
+                      <span>Diego Alves</span>
+                    </li>
+                  </ul>
+
+                  <div class="paciente__footer">
+                    <a href="#" class="paciente__link"> Ver Mais </a>
+                  </div>
+                </section>
+              </aside>
+            </section>
+
+            <!-- FOTOS -->
+            <section class="paciente__fotos">
+              <div class="paciente__fotos-topo">
+                <h2 class="paciente__titulo">Fotos de Antes e Depois</h2>
+              </div>
+
+              <div class="paciente__galeria">
+                <figure class="paciente__imagem-box">
+                  <img
+                    src="./assets/antes_depois.png"
+                    alt="Antes e depois"
+                    class="paciente__imagem"
+                  />
+                </figure>
+              </div>
+            </section>
+          </section>
+        </main>
       </main>
     </div>
 
