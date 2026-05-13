@@ -1,0 +1,54 @@
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .stock-card .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .legend {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titulo-box h1 {
+        font-size: 24px;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .select {
+        width: 100%;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .donut {
+        width: 180px;
+        height: 180px;
+    }
+
+    .donut::before {
+        width: 75px;
+        height: 75px;
+    }
+
+    .center span {
+        font-size: 18px;
+    }
+}

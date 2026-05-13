@@ -1,48 +1,46 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+.main-estoque{
+  width:100%;
+  display:block;
 }
 
-.dashboard{
-  width:100%;
-  max-width:806px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:24px;
-  margin:auto;
+.dashboard {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+    gap: 24px;
 }
 
 /* CARDS */
 
-.card{
-  background:#b9d0cd;
-  border-radius:16px;
-  justify-content: center;;
+.card {
+    background: #b9d0cd;
+    border-radius: 16px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* CARD ESQUERDO */
 
-.stock-card{
-  width:468px;
-  height:286px;
-  padding:16px 22px;
+/* --- CARD ESQUERDO (Quantidade de Produtos) --- */
+.stock-card .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.title{
-  text-align:center;
-  font-size:17px;
-  font-weight:700;
-  color:#2f5d64;
-  margin-top:2px;
+
+.title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2f5d64;
+    margin-bottom: 20px;
 }
 
-.content{
-  display:flex;
-  justify-content: center; 
-  margin-top:22px;
-}
 
 /* DONUT */
 
@@ -136,15 +134,18 @@
 /* CARD DIREITO */
 
 .alert-card{
-  width:298px;
-  height:286px;
-  padding:16px 18px;
-  overflow:hidden;
+  width:100%;
+  max-width: 350px;
+  padding:22px;
+  min-height:300px;
+  position:relative;
 }
+
 
 .alerts{
   display:flex;
   flex-direction:column;
+  align-items: center;
   gap:22px;
   margin-top:14px;
 }
@@ -156,7 +157,7 @@
   display:flex;
   align-items:flex-start;
   gap:12px;
-  width:264px;
+  max-width:264px;
   min-height:84px;
 }
 
@@ -191,3 +192,214 @@
   background:#6ea59d;
   border-radius:20px;
 }
+
+.content {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:20px;
+}
+
+
+.dashboard-content{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.estoque{
+  width: 100%;
+  max-width:1100px;
+  margin:30px auto;
+  border-radius:30px;
+  overflow:hidden;
+  background: #bfd5d3;
+
+  background-size:cover;
+  background-position:center;
+
+  border:none;
+  box-shadow:none;
+}
+
+.topo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 24px 14px 24px;
+}
+
+.titulo-box{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+h1{
+  font-size:42px;
+  color:#2f5f66;
+  font-weight:700;
+}
+
+.icone{
+  width:34px;
+  height:34px;
+  position:relative;
+}
+
+
+.ver-mais{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  color:#2d6268;
+  font-size:18px;
+  font-weight:600;
+}
+
+.seta{
+  width:34px;
+  height:34px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:16px;
+}
+
+.linha{
+  width:100%;
+  height:1px;
+  background:#cfdedd;
+}
+
+.busca-box{
+  margin:16px;
+  height:46px;
+  background:#bfe0d8;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+}
+
+.busca-box input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:transparent;
+  font-size:18px;
+  color:#36656b;
+  font-family:'Poppins',sans-serif;
+}
+
+.busca-box input::placeholder{
+  color:#36656b;
+}
+
+.search-icon{
+  font-size:26px;
+}
+
+.filtros{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:0 16px 16px 16px;
+}
+
+.select{
+  width:100%;
+  height:50px;
+  background:#bfe0d8;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px;
+  color:#3b6870;
+  font-size:18px;
+  font-weight:500;
+}
+
+.arrow{
+  margin-top: 10px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  color:#3c6770;
+}
+
+thead{
+  background:#bfe0d8;
+}
+
+thead th{
+  padding:18px 10px;
+  font-size:18px;
+  font-weight:700;
+  text-align:center;
+  border-top:1px solid #9bbeb9;
+  border-bottom:1px solid #9bbeb9;
+}
+
+tbody tr{
+  height:60px;
+}
+
+tbody td{
+  padding:14px 12px;
+  font-size:18px;
+  text-align:center;
+  border-bottom:1px solid #b8cfcb;
+}
+
+tbody tr:last-child td{
+  border-bottom:none;
+}
+
+.bold{
+  font-weight:700;
+}
+
+.entrada{
+  background:#d8e9c9;
+  color:#2f6670;
+  font-weight:700;
+}
+
+.saida{
+  font-weight:700;
+}
+
+.ok{
+  color:#10b76d;
+}
+
+.alerta{
+  background:#eadf9f;
+  color:#395d63;
+}
+
+tbody td:first-child{
+  width:290px;
+}
+
+tbody td:nth-child(2){
+  width:300px;
+}
+
+tbody td:nth-child(3){
+  width:180px;
+}
+
+tbody td:nth-child(4){
+  width:150px;
+}
+
+tbody td:nth-child(5){
+  width:150px;
+} 
