@@ -54,9 +54,10 @@
 /* CONTEÚDO */
 
 .paciente__conteudo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 320px;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: start;
 }
 
 /* HISTÓRICO */
