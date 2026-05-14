@@ -1,6 +1,6 @@
+/* MOBILE */
 @media (max-width: 767px) {
- 
- .main_tabela {
+  .main_tabela {
     overflow-x: scroll;
     width: 100%;
   }
@@ -19,29 +19,29 @@
     height: 40px;
     border-radius: 8px;
     border: none;
-    padding: 10px 10px;
+    padding: 10px;
     background-color: rgba(133, 189, 176, 0.5);
     margin-top: 15px;
+
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: end;
   }
 
+  .main_tabela_topo,
+  .main_tabela_selecao,
   .main_tabela_conteudo-1,
   .main_tabela_conteudo-2,
   .linha,
-  .main_tabela--linha_escura {
+  .main_tabela--linha_escura,
+  .main_tabela_conteudo-1-serviso {
     width: 175%;
   }
 
   .main_tabela_topo {
-    width: 170%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .main_tabela_selecao {
-    width: 170%;
   }
 
   .main_tabela_selecao {
@@ -56,39 +56,168 @@
     margin-left: 0;
   }
 
-  
-
-
   .bnt_ver_mais {
     margin-top: 3px;
   }
 
+  /* TITULOS */
+  .servico_linha_escura--p1,
+  .servico_linha_escura--p2,
+  .servico_linha_escura--p3,
+  .servico_linha_escura--p4 {
+    font-size: 12px;
+  }
+
   .servico_linha_escura--p1 {
     margin-left: 9%;
-    }
-    .servico_linha_escura--p2 {
-        margin-left: 16.4%;
-    }
-    .servico_linha_escura--p3 {
-        margin-left: 13%;
-    }
-    .servico_linha_escura--p4 {
-        margin-left: 16.5%;
-    
-    }
+  }
 
-    .main_tabela_conteudo-1-serviso{
-        width: 175%;
-    }
+  .servico_linha_escura--p2 {
+    margin-left: 16.4%;
+  }
 
+  .servico_linha_escura--p3 {
+    margin-left: 13%;
+  }
+
+  .servico_linha_escura--p4 {
+    margin-left: 16.5%;
+  }
+
+  /* CONTEUDO */
+  .main_tabela_conteudo-1--p1_servico {
+    margin-left: 35px;
+  }
+
+  .main_tabela_conteudo-1--p2_servico,
+  .main_tabela_conteudo-1--p3_servico,
+  .main_tabela_conteudo-1--img {
+    margin-left: 10%;
+  }
+
+  .main_tabela_conteudo-2--p2_servico {
+    margin-left: 22%;
+  }
+
+  .main_tabela_conteudo-3--p2_servico {
+    margin-left: 14%;
+  }
+
+  .main_tabela_conteudo-4--p2_servico {
+    margin-left: 15%;
+  }
+
+  .main_tabela_conteudo-5--p2_servico {
+    margin-left: 15.5%;
+  }
+
+  .main_tabela_conteudo-6--p2_servico {
+    margin-left: 13%;
+  }
+
+  .main_tabela_conteudo-7--p2_servico {
+    margin-left: 12.5%;
+  }
+
+  .main_tabela_conteudo-1--span,
+  .main_tabela_conteudo-2--span,
+  .main_tabela_conteudo-3--span,
+  .main_tabela_conteudo-4--span,
+  .main_tabela_conteudo-5--span,
+  .main_tabela_conteudo-6--span,
+  .main_tabela_conteudo-7--span {
+    margin-left: -10px;
+    font-size: 11px;
+  }
 }
 
+/* TABLET */
 @media (min-width: 768px) and (max-width: 1280px) {
+  .main_tabela {
+    width: 90%;
+    overflow-x: auto;
+  }
 
-  
- 
+  .main_tabela_topo,
+  .main_tabela_selecao,
+  .main_tabela_conteudo-1,
+  .main_tabela_conteudo-2,
+  .linha,
+  .tabela_barra_pesquisa,
+  .main_tabela--linha_escura,
+  .main_tabela_conteudo-1-serviso {
+    width: 120%;
+  }
+
+  .main_tabela_selecao {
+    gap: 20px;
+  }
+
+  .servico_linha_escura--p1 {
+    margin-left: 10%;
+  }
+
+  .servico_linha_escura--p2 {
+    margin-left: 17%;
+  }
+
+  .servico_linha_escura--p3 {
+    margin-left: 14%;
+  }
+
+  .servico_linha_escura--p4 {
+    margin-left: 18%;
+  }
+
+  .main_tabela_conteudo-1--p1_servico {
+    margin-left: 40px;
+  }
+
+  .main_tabela_conteudo-1--p2_servico,
+  .main_tabela_conteudo-1--p3_servico,
+  .main_tabela_conteudo-1--img {
+    margin-left: 11%;
+  }
+
+  .main_tabela_conteudo-2--p2_servico {
+    margin-left: 24%;
+  }
+
+  .main_tabela_conteudo-3--p2_servico {
+    margin-left: 15%;
+  }
+
+  .main_tabela_conteudo-4--p2_servico {
+    margin-left: 16%;
+  }
+
+  .main_tabela_conteudo-5--p2_servico {
+    margin-left: 16.5%;
+  }
+
+  .main_tabela_conteudo-6--p2_servico {
+    margin-left: 14%;
+  }
+
+  .main_tabela_conteudo-7--p2_servico {
+    margin-left: 13.5%;
+  }
 }
 
+/* DESKTOP */
 @media (min-width: 1281px) {
- 
+  .main_tabela {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main_tabela_topo,
+  .main_tabela_selecao,
+  .main_tabela_conteudo-1,
+  .main_tabela_conteudo-2,
+  .linha,
+  .main_tabela--linha_escura,
+  .main_tabela_conteudo-1-serviso {
+    width: 100%;
+  }
 }

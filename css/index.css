@@ -23,12 +23,13 @@
 /* ================= CARDS ================= */
 
 .cards {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
 }
-.card {
+
+.card_index {
   background: linear-gradient(135deg, #316064);
   color: white;
   padding: 25px;
@@ -37,7 +38,7 @@
   transition: 0.3s;
 }
 
-.card:nth-child(2) {
+.card_index:nth-child(2) {
   background: linear-gradient(135deg, #316064, #5B908E);
 }
 

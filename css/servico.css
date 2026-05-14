@@ -1,64 +1,83 @@
-.servico_linha_escura--p1 , .servico_linha_escura--p2 , .servico_linha_escura--p3 , .servico_linha_escura--p4 {
+.servico_linha_escura--p1,
+.servico_linha_escura--p2,
+.servico_linha_escura--p3,
+.servico_linha_escura--p4 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: var(--font-weight-bold);
 }
+
+/* TITULOS */
 .servico_linha_escura--p1 {
-    margin-left: 12%;
+    margin-left: 9%;
 }
+
 .servico_linha_escura--p2 {
-    margin-left: 18.4%;
-}
-.servico_linha_escura--p3 {
     margin-left: 15%;
 }
-.servico_linha_escura--p4 {
-    margin-left: 19.5%;
-  
-}
 
-.main_tabela_conteudo-1--span {
-   margin-top: 20px;
-}
-.main_tabela_conteudo-1--p5{
-  font-size: 10px;
-}
-
-
-.main_tabela_conteudo-1--p2_servico, .main_tabela_conteudo-1--p3_servico,.main_tabela_conteudo-1--img{
+.servico_linha_escura--p3 {
     margin-left: 13%;
 }
-.main_tabela_conteudo-1--p1_servico{
+
+.servico_linha_escura--p4 {
+    margin-left: 17%;
+}
+
+/* LINHAS DA TABELA */
+.main_tabela_conteudo-1 {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+}
+
+/* SERVIÇO */
+.main_tabela_conteudo-1--p1_servico {
+    width: 25%;
     margin-left: 50px;
 }
 
-.main_tabela_conteudo-2--p2_servico{
-    margin-left: 25.7%;
+/* TEMPO */
+.main_tabela_conteudo-1--p2_servico,
+.main_tabela_conteudo-2--p2_servico,
+.main_tabela_conteudo-3--p2_servico,
+.main_tabela_conteudo-4--p2_servico,
+.main_tabela_conteudo-5--p2_servico,
+.main_tabela_conteudo-6--p2_servico,
+.main_tabela_conteudo-7--p2_servico {
+    width: 15%;
+    margin-left: 0;
 }
 
-.main_tabela_conteudo-3--p2_servico{
-    margin-left: 16.6%;
+/* PREÇO */
+.main_tabela_conteudo-1--p3_servico {
+    width: 15%;
+    margin-left: 0;
 }
 
-.main_tabela_conteudo-4--p2_servico{
-    margin-left: 17.5%;
+/* IMAGEM */
+.main_tabela_conteudo-1--img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 5%;
+    object-fit: cover;
 }
 
-.main_tabela_conteudo-5--p2_servico{
-    margin-left: 18%;
+/* TEXTO PROFISSIONAL */
+.main_tabela_conteudo-1--span,
+.main_tabela_conteudo-2--span,
+.main_tabela_conteudo-3--span,
+.main_tabela_conteudo-4--span,
+.main_tabela_conteudo-5--span,
+.main_tabela_conteudo-6--span,
+.main_tabela_conteudo-7--span {
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
-.main_tabela_conteudo-6--p2_servico{
-    margin-left: 15.3%;
+/* CARGO */
+.main_tabela_conteudo-1--p5_servico {
+    font-size: 10px;
 }
-
-.main_tabela_conteudo-7--p2_servico{
-    margin-left: 14.9%;
-}
-
-
-.main_tabela_conteudo-1--span, .main_tabela_conteudo-2--span, .main_tabela_conteudo-3--span, .main_tabela_conteudo-4--span, .main_tabela_conteudo-5--span, .main_tabela_conteudo-6--span, .main_tabela_conteudo-7--span{ 
-    margin-left: -15px;
-}
-
