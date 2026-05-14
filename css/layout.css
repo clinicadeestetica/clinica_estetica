@@ -18,6 +18,7 @@ body{
 }
 
 .padrao{
+    width: 100%; /* ocupa a largura inteira da pagina */
     height: 100%;
 }
 

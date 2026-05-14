@@ -1,0 +1,242 @@
+@media (max-width: 767px) {
+  main {
+    margin: 20px;
+  }
+
+  .main_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 40px;
+  }
+
+  .card_texto_botao--1 > h1,
+  .card_texto_botao--2 > h1,
+  .card_texto_botao--3 > h1,
+  .card_texto_botao--4 > h1 {
+    font-size: var(--font-size-h2);
+    margin-bottom: -5px;
+  }
+
+  .main_cards--1,
+  .main_cards--2,
+  .main_cards--3,
+  .main_cards--4 {
+    background-color: var(--cor-header);
+    width: 100%;
+    max-width: 100%;
+    min-height: 142px;
+    border-radius: 20px;
+  }
+
+  .bnt_cards {
+    border-radius: 8px;
+    max-height: 40px;
+    max-width: 104px;
+    background-color: #85bdb0;
+    color: var(--font-cor-primaria);
+  }
+
+  .card_texto_botao--1,
+  .card_texto_botao--2,
+  .card_texto_botao--3,
+  .card_texto_botao--4 {
+    width: auto;
+  }
+
+  .main_cards svg {
+    max-width: 90px;
+    height: auto;
+  }
+
+  .main_cards--1 > svg {
+    margin-top: 19px;
+    margin-left: 20px;
+    max-width: 115px;
+  }
+
+  .main_cards--2 > svg {
+    margin-top: 25px;
+    margin-left: 20px;
+    max-width: 105px;
+  }
+  .main_cards--3 > svg {
+    margin-top: 22px;
+    margin-left: 10px;
+    max-width: 115px;
+  }
+  .main_cards--4 > svg {
+    margin-top: 30px;
+    margin-left: 20px;
+    max-width: 105px;
+  }
+
+  .formas_pagamento_cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    gap: 40px;
+  }
+
+  .formas_pagamento_cards--1,
+  .formas_pagamento_cards--2,
+  .formas_pagamento_cards--3 {
+    width: 100%;
+  }
+
+  .main_tabela {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .main_tabela::-webkit-scrollbar-thumb {
+    background-color: rgba(133, 189, 176, 1);
+    border-radius: 5px;
+  }
+
+  .main_tabela::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .tabela_barra_pesquisa {
+    width: 170%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 10px;
+    background-color: rgba(133, 189, 176, 0.5);
+    margin-top: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .main_tabela_conteudo-1,
+  .main_tabela_conteudo-2,
+  .linha,
+  .main_tabela--linha_escura {
+    width: 175%;
+  }
+
+  .main_tabela_topo {
+    width: 170%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main_tabela_selecao {
+    width: 170%;
+  }
+
+  .main_tabela_selecao {
+    gap: 15px;
+  }
+
+  .tabela_campo_selecao {
+    max-width: 100%;
+  }
+
+  .linha {
+    margin-left: 0;
+  }
+
+  .main_tabela--linha_escura {
+    margin-left: 0;
+  }
+
+  .linha_escura--p3 {
+    margin-right: -10px;
+  }
+
+  .linha_escura--p2 {
+    margin-right: -15px;
+  }
+  .linha_escura--p1 {
+    margin-right: -30px;
+  }
+
+  .main_tabela_conteudo-2 {
+    margin-bottom: -80px;
+  }
+
+  .bnt_ver_mais {
+    margin-top: 3px;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  main {
+    margin: 40px;
+  }
+
+  .main_cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .main_cards--1,
+  .main_cards--2,
+  .main_cards--3,
+  .main_cards--4 {
+    max-width: 100%;
+  }
+
+  .formas_pagamento_cards {
+    gap: 20px;
+  }
+
+  .formas_pagamento_cards--1,
+  .formas_pagamento_cards--2,
+  .formas_pagamento_cards--3 {
+    width: 100%;
+  }
+
+  .main_tabela_selecao {
+    gap: 10px;
+  }
+
+  .tabela_campo_selecao {
+    max-width: 220px;
+  }
+
+  .main_tabela--linha_escura {
+    font-size: 14px;
+  }
+
+  .linha_escura--p1 {
+    margin-left: 5%;
+  }
+
+  .linha_escura--p2 {
+    margin-left: 8%;
+  }
+
+  .linha_escura--p3 {
+    margin-left: 8%;
+  }
+
+  .linha_escura--p4 {
+    margin-left: 8%;
+  }
+
+  .bnt_tabela {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1281px) {
+  main {
+    margin: 70px;
+  }
+
+  .main_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
