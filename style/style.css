@@ -9,7 +9,7 @@
 @import url(../css/layout.css);
 @import url(../css/login.css);
 @import url(../css/profissional.css);
-@import url(../css/servicos.css);
+@import url(../css/servico.css);
 
 /* RESPONSIVIDADE */
 @import url(../css/responsividade_agendamento.css);
@@ -21,3 +21,4 @@
 @import url(../css/responsividade_layout.css);
 @import url(../css/responsividade_login.css);
 @import url(../css/responsividade_profissionais.css);
+@import url(../css/responsividade_servicos.css);
