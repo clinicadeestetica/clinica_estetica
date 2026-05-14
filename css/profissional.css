@@ -1,0 +1,327 @@
+.professionals {
+  max-width: 695px;
+  padding: 30px;
+  text-align: center;
+  margin-top: -40px;
+  margin: 140px auto;
+}
+
+/* ELEMENTS */
+.professionals__title {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.professionals__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: color-mix(in srgb, var(--cor-segundaria) 37%, transparent);
+
+  border-radius: 20px;
+}
+
+.professionals__head {
+  background-color: color-mix(in srgb, var(--cor-segundaria) 37%, transparent);
+  border-radius: 20px;
+}
+
+.professionals__header1 {
+  padding: 12px;
+  text-align: center;
+  color: #2f5d5d;
+  border-top-left-radius: 20px;
+}
+
+.professionals__header2 {
+  padding: 12px;
+  text-align: center;
+  color: #2f5d5d;
+  border-top-right-radius: 20px;
+}
+
+.professionals__row :hover {
+  background-color: rgba(225, 225, 225, 0.2);
+}
+
+.professionals__cell {
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* MODIFIER */
+.professionals__cell--user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.professionals__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.professionals__name {
+  font-weight: 500;
+}
+
+/* SECTION */
+.cartao-profissional {
+  width: 100%;
+
+  display: flex;
+  justify-content: left;
+  margin-left: 40px;
+}
+
+/* CONTAINER */
+.cartao-profissional__container {
+  width: 100%;
+  max-width: 750px;
+
+  display: flex;
+  gap: 25px;
+
+  margin-top: 35px;
+
+  border-radius: 16px;
+}
+
+/* ÁREA DA IMAGEM */
+.cartao-profissional__area-imagem {
+  flex-shrink: 0;
+}
+
+.cartao-profissional__imagem {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTEÚDO */
+.cartao-profissional__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TEXTOS */
+.cartao-profissional__nome {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cartao-profissional__profissao {
+  font-size: 1.1rem;
+}
+
+/* CONTATOS */
+.cartao-profissional__contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cartao-profissional__info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 1rem;
+}
+
+.cartao-profissional__icone {
+  font-size: 1rem;
+}
+
+/* ========================================
+   AGENDA PROFISSIONAL
+======================================== */
+.agenda-profissional {
+  width: 95%;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* ESCONDE RADIOS */
+input[type="radio"] {
+  display: none;
+}
+
+/* ===== TABS ===== */
+
+.agenda-profissional__tabs {
+  display: flex;
+  gap: 18px;
+  position: relative;
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.agenda-profissional__tab {
+  padding: 18px 40px;
+  border-radius: 22px 22px 0 0;
+  background: color-mix(in srgb, var(--cor-header) 50%, transparent);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* TAB ATIVA */
+
+#tab-agenda:checked ~ .agenda-profissional__tabs label[for="tab-agenda"],
+#tab-especialidades:checked
+  ~ .agenda-profissional__tabs
+  label[for="tab-especialidades"] {
+  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
+  font-weight: 700;
+}
+
+/* ===== CONTAINER ===== */
+
+.content-profissional {
+  background: color-mix(in srgb, var(--cor-segundaria) 50%, transparent);
+
+  border-radius: 28px;
+
+  padding: 35px;
+}
+
+/* ESCONDE */
+
+.tab-content {
+  display: none;
+}
+
+/* MOSTRA */
+
+#tab-agenda:checked ~ .content-profissional .agenda-content {
+  display: block;
+}
+
+#tab-especialidades:checked ~ .content-profissional .especialidades-content {
+  display: block;
+}
+
+/* ===== CALENDÁRIO ===== */
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+/* CABEÇALHO */
+
+.calendar th {
+  height: 70px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  background: color-mix(in srgb, var(--cor-segundaria) 0%, transparent);
+
+  border: 1px solid rgba(90, 130, 130, 0.18);
+}
+
+/* CELULAS */
+
+.calendar td {
+  height: 120px;
+
+  padding: 14px;
+
+  vertical-align: top;
+  font-size: 1.1rem;
+
+  background: color-mix(in srgb, var(--cor-header) 60%, transparent);
+
+  border: 1px solid color-mix(in srgb, var(--cor-placeholder) 30%, transparent);
+
+  position: relative;
+}
+
+/* CANTOS */
+
+.calendar thead tr th:first-child {
+  border-top-left-radius: 24px;
+}
+
+.calendar thead tr th:last-child {
+  border-top-right-radius: 24px;
+}
+
+.calendar tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 24px;
+}
+
+.calendar tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 24px;
+}
+
+/* ===== TASKS ===== */
+
+.task {
+  width: 85%;
+  height: 14px;
+
+  background: #49767a;
+
+  border-radius: 999px;
+
+  margin-top: 12px;
+
+  opacity: 0.95;
+}
+
+/* ===== ESPECIALIDADES ===== */
+
+.especialidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.especialidades__card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.especialidades__circle {
+  width: 95px;
+  min-width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+  background: var(--cor-header);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.especialidades__svg {
+  width: 40px;
+  height: 40px;
+}
+
+.especialidades__content {
+  background: var(--cor-header);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.especialidades__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.especialidades__description {
+  font-size: 14px;
+  line-height: 1.6;
+}

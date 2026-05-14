@@ -1,0 +1,52 @@
+/* Tablet responsivo */
+@media (max-width: 1280px){
+
+    /* main principal */
+    .cadastro_main{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* logo grande ao lado de content_cadastro */
+    .logo_cadastro{
+        max-width: 220px;
+    }
+
+    /* container de formulário principal do cadastro */
+    .content_cadastro{
+        width: 90%;
+        max-width: 650px;
+    }
+}
+
+/* Mobile responsivo */
+@media (max-width: 767px){
+
+    /* main principal */
+    .cadastro_main{
+        padding: 15px;
+        gap: 20px;
+    }
+
+    /* logo grande ao lado de content_cadastro */
+    .logo_cadastro{
+        max-width: 180px;
+    }
+
+    /* container de formulário principal do cadastro */
+    .content_cadastro{
+        width: 100%;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    /* deixar o titulo e span um pouco maiores */
+    .title_cadastro h2{
+        font-size: 32px;
+    }
+
+    .title_cadastro span{
+        font-size: 14px;
+    }
+
+}
